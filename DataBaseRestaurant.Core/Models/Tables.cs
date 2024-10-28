@@ -8,6 +8,10 @@
 
         public int QuantitySeat { get;  }
 
+        public int WorkerId { get; }
 
+        public Workers? Worker { get; }
+
+        public List<Orders> Orders { get; } = [];
     }
 }

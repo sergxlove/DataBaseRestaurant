@@ -11,5 +11,7 @@
         public string NumberPhone { get; } = string.Empty;
 
         public int Ratting { get; }
+
+        public List<Ingredients> Ingredient { get; } = [];
     }
 }

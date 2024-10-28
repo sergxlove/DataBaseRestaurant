@@ -14,5 +14,7 @@
 
         public int Salary { get; }
 
+        public List<Tables> tables { get; } = [];
+
     }
 }
