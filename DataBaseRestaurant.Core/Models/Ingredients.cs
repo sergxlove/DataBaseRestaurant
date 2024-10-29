@@ -29,7 +29,7 @@
         {
             Ingredients? ingredients = null;
             string error = string.Empty;
-            if (!string.IsNullOrEmpty(name) || name.Length >= MAX_LENGTH_NAME)
+            if (string.IsNullOrEmpty(name) || name.Length >= MAX_LENGTH_NAME)
             {
                 error = "name is null or the allowed number of characters is exceeded";
                 return (ingredients, error);
