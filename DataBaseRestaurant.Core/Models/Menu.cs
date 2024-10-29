@@ -32,7 +32,26 @@
         {
             Menu? menu = null;
             string error = string.Empty;
-
+            if (string.IsNullOrEmpty(name) || name.Length >= MAX_LENGHT_NAME)
+            {
+                error = "name is null or the allowed number of characters is exceeded";
+                return (menu, error);
+            }
+            if (quantityCalorie < 0)
+            {
+                error = "invalid quantityCalorie";
+                return (menu, error);
+            }
+            if (string.IsNullOrEmpty(description) || description.Length >= MAX_LENGTH_DESCRIPTION)
+            {
+                error = "description is null or the allowed number of characters is exceeded";
+                return (menu, error);
+            }
+            if (price < 0)
+            {
+                error = "invalid price";
+                return (menu, error);
+            }
             menu = new(id, name, quantityCalorie, description, price);
             return (menu, error);
 

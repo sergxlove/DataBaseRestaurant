@@ -32,7 +32,7 @@ namespace DataBaseRestaurant.Core.Models
         {
             HistoryOrders? historyOrders = null;
             string error = string.Empty;
-            if(!string.IsNullOrEmpty(listDishes) || listDishes.Length >=MAX_LENGTH_LISTDISHES )
+            if(string.IsNullOrEmpty(listDishes) || listDishes.Length >=MAX_LENGTH_LISTDISHES )
             {
                 error = "listDishes is null or the allowed number of characters is exceeded";
                 return (historyOrders, error);
@@ -43,10 +43,15 @@ namespace DataBaseRestaurant.Core.Models
                 return (historyOrders, error);
             }
             string date = dateorder.ToString();
+            if(string.IsNullOrEmpty(date))
+            {
+                error = "invalid date";
+                return (historyOrders, error);
+            }
             if (date[2] != DATE_FORMAT[2] || date[5] != DATE_FORMAT[5] || date[8] != DATE_FORMAT[8] 
                 || date[11] != DATE_FORMAT[11] || date[14] != DATE_FORMAT[14])
             {
-                error = "invalid date";
+                error = "invalid date format";
                 return (historyOrders, error);
             }
 
