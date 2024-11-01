@@ -8,6 +8,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Configurations
     {
         public void Configure(EntityTypeBuilder<SuppliersEntity> builder)
         {
+            builder.ToTable("Suppliers");
             builder.HasKey(a => a.Id);
 
             builder.HasMany(a => a.Ingredient)

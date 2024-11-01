@@ -8,6 +8,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Configurations
     {
         public void Configure(EntityTypeBuilder<HistoryOrdersEntity> builder)
         {
+            builder.ToTable("HistoryOrders");
             builder.HasKey(a => a.Id);
 
             builder.HasOne(a => a.Client)
