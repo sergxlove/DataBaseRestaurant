@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
+﻿namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 {
-    internal class WorkersRepository
+    public class WorkersRepository
     {
     }
 }
