@@ -56,16 +56,23 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 
         public async Task<int?> Update(Workers workers)
         {
-            var workersEntity = _dbContext.Workers
+            return await _dbContext.Workers
                 .AsNoTracking()
-                .FirstOrDefault(a=> a.Id == workers.Id);
+                .Where(a => a.Id == workers.Id)
+                .ExecuteUpdateAsync(s =>
+                s.SetProperty(s => s.Name, workers.Name)
+                .SetProperty(s => s.Email, workers.Email)
+                .SetProperty(s => s.NumberPhone, workers.NumberPhone)
+                .SetProperty(s => s.Position, workers.Position)
+                .SetProperty(s => s.Salary, workers.Salary));
+        }
 
-            if (workersEntity is not null)
-            {
-
-            }
-
-            return workers.Id;
+        public async Task<int?> Delete(int id)
+        {
+            return await _dbContext.Workers
+                .AsNoTracking()
+                .Where(a => a.Id == id)
+                .ExecuteDeleteAsync();
         }
     }
 }
