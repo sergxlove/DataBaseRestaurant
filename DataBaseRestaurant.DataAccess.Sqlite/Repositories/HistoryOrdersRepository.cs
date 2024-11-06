@@ -1,4 +1,5 @@
 ﻿using DataBaseRestaurant.Core.Models;
+using DataBaseRestaurant.DataAccess.Sqlite.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
@@ -36,6 +37,42 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return null;
         }
 
+        public async Task<int> Add(HistoryOrders historyOrder)
+        {
+            HistoryOrdersEntity historyOrdersEntity = new()
+            {
+                Id = historyOrder.Id,
+                ListDishes = historyOrder.ListDishes,
+                TotalSum = historyOrder.TotalSum,
+                DateOrder = historyOrder.DateOrder,
+                ClientId = historyOrder.ClientId
+            };
 
+            await _dbContext.AddAsync(historyOrdersEntity);
+            await _dbContext.SaveChangesAsync();
+
+            return historyOrder.Id;
+        }
+
+        public async Task<int> Update(HistoryOrders historyOrder)
+        {
+            return await _dbContext.HistoryOrders
+                .AsNoTracking()
+                .Where(a => a.Id == historyOrder.Id)
+                .ExecuteUpdateAsync(s =>
+                s.SetProperty(s => s.Id, historyOrder.Id)
+                .SetProperty(s => s.ListDishes, historyOrder.ListDishes)
+                .SetProperty(s => s.TotalSum, historyOrder.TotalSum)
+                .SetProperty(s => s.DateOrder, historyOrder.DateOrder)
+                .SetProperty(s => s.ClientId, historyOrder.ClientId));
+        }
+
+        public async Task<int> Delete(int id)
+        {
+            return await _dbContext.HistoryOrders
+                .AsNoTracking()
+                .Where(a => a.Id == id)
+                .ExecuteDeleteAsync();
+        }
     }
 }

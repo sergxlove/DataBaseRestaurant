@@ -54,7 +54,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 
         }
 
-        public async Task<int?> Update(Workers workers)
+        public async Task<int> Update(Workers workers)
         {
             return await _dbContext.Workers
                 .AsNoTracking()
@@ -67,7 +67,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .SetProperty(s => s.Salary, workers.Salary));
         }
 
-        public async Task<int?> Delete(int id)
+        public async Task<int> Delete(int id)
         {
             return await _dbContext.Workers
                 .AsNoTracking()
