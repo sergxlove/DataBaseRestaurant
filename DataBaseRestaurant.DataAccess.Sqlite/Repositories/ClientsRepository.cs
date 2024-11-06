@@ -48,12 +48,13 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             };
 
             await _dbContext.AddAsync(clientsEntity);
+            await _dbContext.Clients.AddAsync(clientsEntity);
             await _dbContext.SaveChangesAsync();
 
             return clientsEntity.Id;
         }
 
-        public async Task<int?> Update(Clients clients)
+        public async Task<int> Update(Clients clients)
         {
             return await _dbContext.Clients
                 .AsNoTracking()
@@ -66,7 +67,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .SetProperty(s => s.OrderId, clients.OrderId));
         }
 
-        public async Task<int?> Delete(int id)
+        public async Task<int> Delete(int id)
         {
             return await _dbContext.Clients
                 .AsNoTracking()

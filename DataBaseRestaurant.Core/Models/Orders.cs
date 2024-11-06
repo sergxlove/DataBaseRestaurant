@@ -2,7 +2,7 @@
 {
     public class Orders
     {
-        private Orders(int totalsum, int clientId, int tableId)
+        private Orders(int id, int totalsum, int clientId, int tableId)
         {
             TotalSum = totalsum;
             ClientId = clientId;
@@ -22,7 +22,7 @@
 
         public Tables? Table { get; }
 
-        public static (Orders? order, string error) Create(int totalsum, int clientId, int tableId)
+        public static (Orders? order, string error) Create(int id, int totalsum, int clientId, int tableId)
         {
             Orders? order = null;
             string error = string.Empty;
@@ -31,7 +31,7 @@
                 error = "invalid totalprice";
                 return (order, error);
             }
-            order = new(totalsum, clientId, tableId);
+            order = new(id, totalsum, clientId, tableId);
             return (order, error);
 
         }
