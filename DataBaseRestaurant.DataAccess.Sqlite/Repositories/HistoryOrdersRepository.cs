@@ -1,10 +1,11 @@
-﻿using DataBaseRestaurant.Core.Models;
+﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Models;
 using DataBaseRestaurant.DataAccess.Sqlite.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 {
-    public class HistoryOrdersRepository
+    public class HistoryOrdersRepository : IHistoryOrdersRepository
     {
         private readonly RestaurantDbContext _dbContext;
 
@@ -29,7 +30,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .AsNoTracking()
                 .FirstOrDefaultAsync(a => a.Id == id);
 
-            if(historyOrder is not null)
+            if (historyOrder is not null)
             {
                 return HistoryOrders.Create(historyOrder.Id, historyOrder.ListDishes, historyOrder.TotalSum,
                     historyOrder.DateOrder, historyOrder.ClientId).historyorder;

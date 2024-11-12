@@ -1,10 +1,12 @@
-﻿using DataBaseRestaurant.Core.Models;
+﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Models;
 using DataBaseRestaurant.DataAccess.Sqlite.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 {
-    public class IngredientsRepository
+  
+    public class IngredientsRepository : IIngredientsRepository
     {
         private readonly RestaurantDbContext _dbContext;
 

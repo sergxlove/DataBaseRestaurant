@@ -1,11 +1,12 @@
-﻿using DataBaseRestaurant.Core.Models;
+﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Models;
 using DataBaseRestaurant.DataAccess.Sqlite.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 {
-    public class MenuRepository
+    public class MenuRepository : IMenuRepository
     {
         private readonly RestaurantDbContext _dbContext;
 
@@ -30,7 +31,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .AsNoTracking()
                 .FirstOrDefaultAsync(a => a.Id == id);
 
-            if(menuEntity is not null)
+            if (menuEntity is not null)
             {
                 return Menu.Create(menuEntity.Id, menuEntity.Name, menuEntity.QuantityCalorie,
                     menuEntity.Description, menuEntity.Price).menu;

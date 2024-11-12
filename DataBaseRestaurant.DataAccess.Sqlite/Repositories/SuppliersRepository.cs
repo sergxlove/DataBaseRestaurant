@@ -1,10 +1,11 @@
-﻿using DataBaseRestaurant.Core.Models;
+﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Models;
 using DataBaseRestaurant.DataAccess.Sqlite.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 {
-    public class SuppliersRepository
+    public class SuppliersRepository : ISuppliersRepository
     {
         private readonly RestaurantDbContext _dbContext;
 
@@ -28,9 +29,9 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .AsNoTracking()
                 .FirstOrDefaultAsync(a => a.Id == id);
 
-            if(suppliersEntity is not null)
+            if (suppliersEntity is not null)
             {
-                return Suppliers.Create(suppliersEntity.Id, suppliersEntity.Name, suppliersEntity.Email, 
+                return Suppliers.Create(suppliersEntity.Id, suppliersEntity.Name, suppliersEntity.Email,
                     suppliersEntity.NumberPhone, suppliersEntity.Ratting).supplier;
             }
             return null;

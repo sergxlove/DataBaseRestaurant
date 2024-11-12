@@ -1,10 +1,11 @@
-﻿using DataBaseRestaurant.Core.Models;
+﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Models;
 using DataBaseRestaurant.DataAccess.Sqlite.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 {
-    public class WorkersRepository
+    public class WorkersRepository : IWorkersRepository
     {
         private readonly RestaurantDbContext _dbContext;
 
@@ -41,10 +42,10 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             {
                 Id = workers.Id,
                 Name = workers.Name,
-                Email = workers.Email, 
-                NumberPhone = workers.NumberPhone, 
+                Email = workers.Email,
+                NumberPhone = workers.NumberPhone,
                 Position = workers.Position,
-                Salary = workers.Salary 
+                Salary = workers.Salary
             };
 
             await _dbContext.Workers.AddAsync(worker);
