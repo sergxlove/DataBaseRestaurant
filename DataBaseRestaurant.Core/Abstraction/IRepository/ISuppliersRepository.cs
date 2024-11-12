@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataBaseRestaurant.Core.Models;
 
 namespace DataBaseRestaurant.Core.Abstraction.IRepository
 {
-    internal interface ISuppliersRepository
+    public interface ISuppliersRepository
     {
+        Task<int> Add(Suppliers supplier);
+        Task<int> Delete(int id);
+        Task<List<Suppliers>> Get();
+        Task<Suppliers?> GetById(int id);
+        Task<int> Update(Suppliers suppliers);
     }
 }

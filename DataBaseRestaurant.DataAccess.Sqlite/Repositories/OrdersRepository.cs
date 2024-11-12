@@ -1,10 +1,11 @@
-﻿using DataBaseRestaurant.Core.Models;
+﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Models;
 using DataBaseRestaurant.DataAccess.Sqlite.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 {
-    public class OrdersRepository
+    public class OrdersRepository : IOrdersRepository
     {
         private readonly RestaurantDbContext _dbContext;
 
@@ -29,7 +30,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .AsNoTracking()
                 .FirstOrDefaultAsync(a => a.Id == id);
 
-            if(orderEntity is not null)
+            if (orderEntity is not null)
             {
                 return Orders.Create(orderEntity.Id, orderEntity.TotalSum, orderEntity.ClientId, orderEntity.TableId)
                     .order;
@@ -57,7 +58,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return await _dbContext.Orders
                 .AsNoTracking()
                 .Where(a => a.Id == order.Id)
-                .ExecuteUpdateAsync(s => 
+                .ExecuteUpdateAsync(s =>
                 s.SetProperty(s => s.Id, order.Id)
                 .SetProperty(s => s.TotalSum, order.TotalSum)
                 .SetProperty(s => s.ClientId, order.ClientId)

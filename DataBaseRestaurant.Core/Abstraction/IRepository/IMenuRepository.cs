@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataBaseRestaurant.Core.Models;
 
 namespace DataBaseRestaurant.Core.Abstraction.IRepository
 {
-    internal interface IMenuRepository
+    public interface IMenuRepository
     {
+        Task<int> Add(Menu menu);
+        Task<int> Delete(int id);
+        Task<List<Menu>> Get();
+        Task<Menu?> GetById(int id);
+        Task<int> Update(Menu menu);
     }
 }

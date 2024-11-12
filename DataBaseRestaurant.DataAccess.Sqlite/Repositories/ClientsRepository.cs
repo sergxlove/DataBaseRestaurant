@@ -1,12 +1,13 @@
-﻿using DataBaseRestaurant.Core.Models;
+﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Models;
 using DataBaseRestaurant.DataAccess.Sqlite.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
 {
-    public class ClientsRepository
+    public class ClientsRepository : IClientsRepository
     {
-        private readonly RestaurantDbContext _dbContext; 
+        private readonly RestaurantDbContext _dbContext;
 
         public ClientsRepository(RestaurantDbContext dbContext)
         {
@@ -29,7 +30,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .AsNoTracking()
                 .FirstOrDefaultAsync(a => a.Id == id);
 
-            if(client is not null)
+            if (client is not null)
             {
                 return Clients.Create(client.Id, client.Name, client.Email, client.Preferences, client.OrderId).client;
             }

@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataBaseRestaurant.Core.Models;
 
 namespace DataBaseRestaurant.Core.Abstraction.IRepository
 {
-    internal interface IHistoryOrdersRepository
+    public interface IHistoryOrdersRepository
     {
+        Task<int> Add(HistoryOrders historyOrder);
+        Task<int> Delete(int id);
+        Task<List<HistoryOrders>> Get();
+        Task<HistoryOrders?> GetById(int id);
+        Task<int> Update(HistoryOrders historyOrder);
     }
 }
