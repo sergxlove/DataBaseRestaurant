@@ -1,9 +1,10 @@
 ﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Abstraction.IService;
 using DataBaseRestaurant.Core.Models;
 
 namespace DataBaseRestaurant.Application.Services
 {
-    public class HistoryOrdersService
+    public class HistoryOrdersService : IHistoryOrdersService
     {
         private readonly IHistoryOrdersRepository _historyOrdersRepository;
 

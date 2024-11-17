@@ -1,9 +1,10 @@
 ﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Abstraction.IService;
 using DataBaseRestaurant.Core.Models;
 
 namespace DataBaseRestaurant.Application.Services
 {
-    public class OrdersService
+    public class OrdersService : IOrdersService
     {
         private readonly IOrdersRepository _ordersRepository;
 
