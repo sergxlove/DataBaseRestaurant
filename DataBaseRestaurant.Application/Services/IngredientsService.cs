@@ -12,29 +12,29 @@ namespace DataBaseRestaurant.Application.Services
             _ingredientsRepository = ingredientsRepository;
         }
 
-        public async Task<List<Ingredients>> GetAllIngredients()
+        public async Task<List<Ingredients>> GetAllIngredientsAsync()
         {
-            return await _ingredientsRepository.Get();
+            return await _ingredientsRepository.GetAsync();
         }
 
-        public async Task<Ingredients?> GetIngredientsById(int id)
+        public async Task<Ingredients?> GetIngredientsByIdAsync(int id)
         {
-            return await _ingredientsRepository.GetById(id);
+            return await _ingredientsRepository.GetByIdAsync(id);
         }
 
-        public async Task<int> AddNewIngredients(Ingredients ingredients)
+        public async Task<int> AddNewIngredientsAsync(Ingredients ingredients)
         {
-            return await _ingredientsRepository.Add(ingredients);
+            return await _ingredientsRepository.AddAsync(ingredients);
         }
 
-        public async Task<int> UpdateIngredients(Ingredients ingredients)
+        public async Task<int> UpdateIngredientsAsync(Ingredients ingredients)
         {
-            return await _ingredientsRepository.Update(ingredients);
+            return await _ingredientsRepository.UpdateAsync(ingredients);
         }
 
-        public async Task<int> DeleteIngredients(int id)
+        public async Task<int> DeleteIngredientsAsync(int id)
         {
-            return await _ingredientsRepository.Delete(id);
+            return await _ingredientsRepository.DeleteAsync(id);
         }
     }
 }
