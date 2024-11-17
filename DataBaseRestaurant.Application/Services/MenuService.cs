@@ -14,27 +14,27 @@ namespace DataBaseRestaurant.Application.Services
 
         public async Task<List<Menu>> GetAllMenuAsync()
         {
-            return await _menuRepository.Get();
+            return await _menuRepository.GetAsync();
         }
 
         public async Task<Menu?> GetMenuByIdAsync(int id)
         {
-            return await _menuRepository.GetById(id);
+            return await _menuRepository.GetByIdAsync(id);
         }
 
         public async Task<int> AddNewMenuAsync(Menu menu)
         {
-            return await _menuRepository.Add(menu);
+            return await _menuRepository.AddAsync(menu);
         }
 
         public async Task<int> UpdateMenuAsync(Menu menu)
         {
-            return await _menuRepository.Update(menu);
+            return await _menuRepository.UpdateAsync(menu);
         }
 
         public async Task<int> DeleteMenuAsync(int id)
         {
-            return await _menuRepository.Delete(id);
+            return await _menuRepository.DeleteAsync(id);
         }
     }
 }

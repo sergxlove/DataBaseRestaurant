@@ -14,7 +14,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<List<HistoryOrders>> Get()
+        public async Task<List<HistoryOrders>> GetAsync()
         {
             var historyOrders = await _dbContext.HistoryOrders
                 .AsNoTracking()
@@ -24,7 +24,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 a.ClientId).historyorder).ToList()!;
         }
 
-        public async Task<HistoryOrders?> GetById(int id)
+        public async Task<HistoryOrders?> GetByIdAsync(int id)
         {
             var historyOrder = await _dbContext.HistoryOrders
                 .AsNoTracking()
@@ -38,7 +38,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return null;
         }
 
-        public async Task<int> Add(HistoryOrders historyOrder)
+        public async Task<int> AddAsync(HistoryOrders historyOrder)
         {
             HistoryOrdersEntity historyOrdersEntity = new()
             {
@@ -55,7 +55,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return historyOrder.Id;
         }
 
-        public async Task<int> Update(HistoryOrders historyOrder)
+        public async Task<int> UpdateAsync(HistoryOrders historyOrder)
         {
             return await _dbContext.HistoryOrders
                 .AsNoTracking()
@@ -68,7 +68,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .SetProperty(s => s.ClientId, historyOrder.ClientId));
         }
 
-        public async Task<int> Delete(int id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _dbContext.HistoryOrders
                 .AsNoTracking()

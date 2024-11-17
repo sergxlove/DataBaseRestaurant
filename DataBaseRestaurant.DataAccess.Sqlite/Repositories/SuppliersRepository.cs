@@ -14,7 +14,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<List<Suppliers>> Get()
+        public async Task<List<Suppliers>> GetAsync()
         {
             var suppliersEntity = await _dbContext.Suppliers
                 .AsNoTracking()
@@ -23,7 +23,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return suppliersEntity.Select(a => Suppliers.Create(a.Id, a.Name, a.Email, a.NumberPhone, a.Ratting).supplier).ToList()!;
         }
 
-        public async Task<Suppliers?> GetById(int id)
+        public async Task<Suppliers?> GetByIdAsync(int id)
         {
             var suppliersEntity = await _dbContext.Suppliers
                 .AsNoTracking()
@@ -37,7 +37,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return null;
         }
 
-        public async Task<int> Add(Suppliers supplier)
+        public async Task<int> AddAsync(Suppliers supplier)
         {
             SuppliersEntity suppliersEntity = new()
             {
@@ -53,7 +53,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return suppliersEntity.Id;
         }
 
-        public async Task<int> Update(Suppliers suppliers)
+        public async Task<int> UpdateAsync(Suppliers suppliers)
         {
             return await _dbContext.Suppliers
                 .AsNoTracking()
@@ -65,7 +65,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .SetProperty(s => s.Ratting, suppliers.Ratting));
         }
 
-        public async Task<int> Delete(int id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _dbContext.Suppliers
                 .AsNoTracking()

@@ -15,7 +15,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<List<Ingredients>> Get()
+        public async Task<List<Ingredients>> GetAsync()
         {
             var ingredientsEntity = await _dbContext.Ingredients
                 .AsNoTracking()
@@ -25,7 +25,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 a.SupplierId).ingredients).ToList()!;
         }
 
-        public async Task<Ingredients?> GetById(int id)
+        public async Task<Ingredients?> GetByIdAsync(int id)
         {
             var ingredientEntity = await _dbContext.Ingredients
                 .AsNoTracking()
@@ -39,7 +39,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return null;
         }
 
-        public async Task<int> Add(Ingredients ingredient)
+        public async Task<int> AddAsync(Ingredients ingredient)
         {
             IngredientsEntity ingredientEntity = new()
             {
@@ -56,7 +56,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return ingredientEntity.Id;
         }
 
-        public async Task<int> Update(Ingredients ingredient)
+        public async Task<int> UpdateAsync(Ingredients ingredient)
         {
             return await _dbContext.Ingredients
                 .AsNoTracking()
@@ -69,7 +69,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .SetProperty(s => s.SupplierId, ingredient.SupplierId));
         }
 
-        public async Task<int> Delete(int id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _dbContext.Ingredients
                 .AsNoTracking()

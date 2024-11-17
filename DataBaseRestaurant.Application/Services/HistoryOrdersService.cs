@@ -12,29 +12,29 @@ namespace DataBaseRestaurant.Application.Services
             _historyOrdersRepository = historyOrdersRepository;
         }
 
-        public async Task<List<HistoryOrders>> GetAllHistoryOrders()
+        public async Task<List<HistoryOrders>> GetAllHistoryOrdersAsync()
         {
-            return await _historyOrdersRepository.Get();
+            return await _historyOrdersRepository.GetAsync();
         }
 
-        public async Task<HistoryOrders?> GetHistoryOrderById(int id)
+        public async Task<HistoryOrders?> GetHistoryOrderByIdAsync(int id)
         {
-            return await _historyOrdersRepository.GetById(id);
+            return await _historyOrdersRepository.GetByIdAsync(id);
         }
 
-        public async Task<int> AddNewHistoryOrder(HistoryOrders historyOrders)
+        public async Task<int> AddNewHistoryOrderAsync(HistoryOrders historyOrders)
         {
-            return await _historyOrdersRepository.Add(historyOrders);
+            return await _historyOrdersRepository.AddAsync(historyOrders);
         }
 
-        public async Task<int> UpdateHistoryOrder(HistoryOrders historyOrders)
+        public async Task<int> UpdateHistoryOrderAsync(HistoryOrders historyOrders)
         {
-            return await _historyOrdersRepository.Update(historyOrders);
+            return await _historyOrdersRepository.UpdateAsync(historyOrders);
         }
 
-        public async Task<int> DeleteHistoryOrder(int id)
+        public async Task<int> DeleteHistoryOrderAsync(int id)
         {
-            return await _historyOrdersRepository.Delete(id);
+            return await _historyOrdersRepository.DeleteAsync(id);
         }
     }
 }

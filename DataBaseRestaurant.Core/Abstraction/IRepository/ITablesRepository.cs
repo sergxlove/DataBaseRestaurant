@@ -4,10 +4,10 @@ namespace DataBaseRestaurant.Core.Abstraction.IRepository
 {
     public interface ITablesRepository
     {
-        Task<int> Add(Tables table);
-        Task<int> Delete(int id);
-        Task<List<Tables>> Get();
-        Task<Tables?> GetById(int id);
-        Task<int> Update(Tables table);
+        Task<int> AddAsync(Tables table);
+        Task<int> DeleteAsync(int id);
+        Task<List<Tables>> GetAsync();
+        Task<Tables?> GetByIdAsync(int id);
+        Task<int> UpdateAsync(Tables table);
     }
 }

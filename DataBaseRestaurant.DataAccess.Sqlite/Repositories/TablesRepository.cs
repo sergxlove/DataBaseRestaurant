@@ -14,7 +14,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<List<Tables>> Get()
+        public async Task<List<Tables>> GetAsync()
         {
             var tablesEntity = await _dbContext.Tables
                 .AsNoTracking()
@@ -23,7 +23,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return tablesEntity.Select(a => Tables.Create(a.Id, a.Status, a.QuantitySeat, a.WorkerId).table).ToList()!;
         }
 
-        public async Task<Tables?> GetById(int id)
+        public async Task<Tables?> GetByIdAsync(int id)
         {
             var tableEntity = await _dbContext.Tables
                 .AsNoTracking()
@@ -37,7 +37,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return null;
         }
 
-        public async Task<int> Add(Tables table)
+        public async Task<int> AddAsync(Tables table)
         {
             TablesEntity tablesEntity = new()
             {
@@ -52,7 +52,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return tablesEntity.Id;
         }
 
-        public async Task<int> Update(Tables table)
+        public async Task<int> UpdateAsync(Tables table)
         {
             return await _dbContext.Tables
                 .AsNoTracking()
@@ -64,7 +64,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 .SetProperty(s => s.WorkerId, table.WorkerId));
         }
 
-        public async Task<int> Delete(int id)
+        public async Task<int> DeleteAsync(int id)
         {
             return await _dbContext.Tables
                 .AsNoTracking()
