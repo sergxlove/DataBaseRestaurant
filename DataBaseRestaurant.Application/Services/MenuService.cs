@@ -1,9 +1,10 @@
 ﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Abstraction.IService;
 using DataBaseRestaurant.Core.Models;
 
 namespace DataBaseRestaurant.Application.Services
 {
-    public class MenuService
+    public class MenuService : IMenuService
     {
         private readonly IMenuRepository _menuRepository;
 

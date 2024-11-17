@@ -1,9 +1,10 @@
 ﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
+using DataBaseRestaurant.Core.Abstraction.IService;
 using DataBaseRestaurant.Core.Models;
 
 namespace DataBaseRestaurant.Application.Services
 {
-    public class WorkersService
+    public class WorkersService : IWorkersService
     {
         private readonly IWorkersRepository _workersRepository;
 
