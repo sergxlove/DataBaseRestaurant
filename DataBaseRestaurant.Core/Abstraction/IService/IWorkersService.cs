@@ -8,6 +8,7 @@ namespace DataBaseRestaurant.Core.Abstraction.IService
         Task<int> DeleteWorkerAsync(int id);
         Task<List<Workers>> GetAllWorkersAsync();
         Task<Workers?> GetWorkerByIdAsync(int id);
+        Task<List<int>> GetAllIdWorkersAsync();
         Task<int> UpdateWorkerAsync(Workers worker);
     }
 }

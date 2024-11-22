@@ -23,6 +23,11 @@ namespace DataBaseRestaurant.Application.Services
             return await _workersRepository.GetByIdAsync(id);
         }
 
+        public async Task<List<int>> GetAllIdWorkersAsync()
+        {
+            return await _workersRepository.GetAllIdAsync();
+        }
+
         public async Task<int> AddNewWorkerAsync(Workers worker)
         {
             return await _workersRepository.AddAsync(worker);

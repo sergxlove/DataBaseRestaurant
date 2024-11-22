@@ -1,6 +1,7 @@
 ﻿using DataBaseRestaurant.Core.Abstraction.IRepository;
 using DataBaseRestaurant.Core.Abstraction.IService;
 using DataBaseRestaurant.Core.Models;
+using System.Text;
 
 namespace DataBaseRestaurant.Application.Services
 {
@@ -21,6 +22,11 @@ namespace DataBaseRestaurant.Application.Services
         public async Task<Clients?> GetClientsByIdAsync(int id)
         {
             return await _clientsRepository.GetByIdAsync(id);
+        }
+
+        public async Task<List<int>> GetAllIdClientsAsync()
+        {
+            return await _clientsRepository.GetAllIdAsync();
         }
 
         public async Task<int> AddNewClientAsync(Clients clients)

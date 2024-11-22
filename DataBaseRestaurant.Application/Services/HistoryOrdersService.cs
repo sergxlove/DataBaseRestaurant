@@ -23,6 +23,11 @@ namespace DataBaseRestaurant.Application.Services
             return await _historyOrdersRepository.GetByIdAsync(id);
         }
 
+        public async Task<List<int>> GetAllIdHistroryOrdersAsync()
+        {
+            return await _historyOrdersRepository.GetAllIdAsync();
+        }
+
         public async Task<int> AddNewHistoryOrderAsync(HistoryOrders historyOrders)
         {
             return await _historyOrdersRepository.AddAsync(historyOrders);
