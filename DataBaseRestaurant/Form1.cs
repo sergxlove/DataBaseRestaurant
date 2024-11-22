@@ -33,5 +33,6 @@ namespace DataBaseRestaurant
         }
 
         private ServiceCollection serviceColection;
+
     }
 }
