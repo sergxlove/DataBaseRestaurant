@@ -8,6 +8,7 @@ namespace DataBaseRestaurant.Core.Abstraction.IService
         Task<int> DeleteHistoryOrderAsync(int id);
         Task<List<HistoryOrders>> GetAllHistoryOrdersAsync();
         Task<HistoryOrders?> GetHistoryOrderByIdAsync(int id);
+        Task<List<int>> GetAllIdHistroryOrdersAsync();
         Task<int> UpdateHistoryOrderAsync(HistoryOrders historyOrders);
     }
 }

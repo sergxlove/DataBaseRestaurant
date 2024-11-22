@@ -39,6 +39,14 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return null;
         }
 
+        public async Task<List<int>> GetAllIdAsync()
+        {
+            return await _dbContext.Ingredients
+                .AsNoTracking()
+                .Select(a => a.Id)
+                .ToListAsync();
+        }
+
         public async Task<int> AddAsync(Ingredients ingredient)
         {
             IngredientsEntity ingredientEntity = new()
