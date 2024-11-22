@@ -38,6 +38,13 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             return null;
         }
 
+        public async Task<List<int>> GetAllIdAsync()
+        {
+            return await _dbContext.HistoryOrders.AsNoTracking()
+                .Select(a => a.Id)
+                .ToListAsync();
+        }
+
         public async Task<int> AddAsync(HistoryOrders historyOrder)
         {
             HistoryOrdersEntity historyOrdersEntity = new()

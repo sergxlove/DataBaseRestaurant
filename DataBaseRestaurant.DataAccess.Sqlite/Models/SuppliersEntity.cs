@@ -12,6 +12,6 @@
 
         public int Ratting { get; set; }
 
-        public List<IngredientsEntity> Ingredient { get; } = [];
+        public List<IngredientsEntity> Ingredient { get; set; } = [];
     }
 }
