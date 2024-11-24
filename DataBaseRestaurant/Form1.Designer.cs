@@ -49,7 +49,7 @@
             label5 = new Label();
             button5 = new Button();
             button4 = new Button();
-            label4 = new Label();
+            outputAddClients = new Label();
             groupBox1 = new GroupBox();
             label10 = new Label();
             button2 = new Button();
@@ -65,9 +65,9 @@
             tabPage7 = new TabPage();
             tabPage8 = new TabPage();
             groupBox6 = new GroupBox();
-            label19 = new Label();
+            outputDeleteWorker = new Label();
             button10 = new Button();
-            textBox14 = new TextBox();
+            idForDeleteWorker = new TextBox();
             label20 = new Label();
             groupBox5 = new GroupBox();
             salaryWorkersBox = new TextBox();
@@ -85,14 +85,14 @@
             label17 = new Label();
             button8 = new Button();
             button9 = new Button();
-            label18 = new Label();
+            outputAddWorkers = new Label();
             groupBox4 = new GroupBox();
-            label11 = new Label();
+            outputGetWorkers = new Label();
             button6 = new Button();
             button7 = new Button();
-            textBox8 = new TextBox();
+            idForGetWorker = new TextBox();
             label12 = new Label();
-            textBox9 = new TextBox();
+            dataWorkersTB = new TextBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -200,7 +200,7 @@
             groupBox2.Controls.Add(label5);
             groupBox2.Controls.Add(button5);
             groupBox2.Controls.Add(button4);
-            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(outputAddClients);
             groupBox2.ForeColor = Color.White;
             groupBox2.Location = new Point(433, 6);
             groupBox2.Name = "groupBox2";
@@ -329,14 +329,14 @@
             button4.Text = "Добавить";
             button4.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // outputAddClients
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(15, 466);
-            label4.Name = "label4";
-            label4.Size = new Size(67, 20);
-            label4.TabIndex = 8;
-            label4.Text = "Вывод ...";
+            outputAddClients.AutoSize = true;
+            outputAddClients.Location = new Point(15, 466);
+            outputAddClients.Name = "outputAddClients";
+            outputAddClients.Size = new Size(67, 20);
+            outputAddClients.TabIndex = 8;
+            outputAddClients.Text = "Вывод ...";
             // 
             // groupBox1
             // 
@@ -387,6 +387,7 @@
             button1.TabIndex = 3;
             button1.Text = "Получить по id";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // textBox2
             // 
@@ -485,9 +486,9 @@
             // 
             // groupBox6
             // 
-            groupBox6.Controls.Add(label19);
+            groupBox6.Controls.Add(outputDeleteWorker);
             groupBox6.Controls.Add(button10);
-            groupBox6.Controls.Add(textBox14);
+            groupBox6.Controls.Add(idForDeleteWorker);
             groupBox6.Controls.Add(label20);
             groupBox6.ForeColor = Color.White;
             groupBox6.Location = new Point(835, 3);
@@ -497,14 +498,14 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "Удаление данных";
             // 
-            // label19
+            // outputDeleteWorker
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(12, 466);
-            label19.Name = "label19";
-            label19.Size = new Size(67, 20);
-            label19.TabIndex = 7;
-            label19.Text = "Вывод ...";
+            outputDeleteWorker.AutoSize = true;
+            outputDeleteWorker.Location = new Point(12, 466);
+            outputDeleteWorker.Name = "outputDeleteWorker";
+            outputDeleteWorker.Size = new Size(67, 20);
+            outputDeleteWorker.TabIndex = 7;
+            outputDeleteWorker.Text = "Вывод ...";
             // 
             // button10
             // 
@@ -517,13 +518,14 @@
             button10.TabIndex = 5;
             button10.Text = "Удалить ";
             button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
-            // textBox14
+            // idForDeleteWorker
             // 
-            textBox14.Location = new Point(12, 65);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(392, 27);
-            textBox14.TabIndex = 6;
+            idForDeleteWorker.Location = new Point(12, 65);
+            idForDeleteWorker.Name = "idForDeleteWorker";
+            idForDeleteWorker.Size = new Size(392, 27);
+            idForDeleteWorker.TabIndex = 6;
             // 
             // label20
             // 
@@ -552,7 +554,7 @@
             groupBox5.Controls.Add(label17);
             groupBox5.Controls.Add(button8);
             groupBox5.Controls.Add(button9);
-            groupBox5.Controls.Add(label18);
+            groupBox5.Controls.Add(outputAddWorkers);
             groupBox5.ForeColor = Color.White;
             groupBox5.Location = new Point(419, 3);
             groupBox5.Name = "groupBox5";
@@ -684,6 +686,7 @@
             button8.TabIndex = 9;
             button8.Text = "Обновить";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -698,23 +701,23 @@
             button9.UseVisualStyleBackColor = false;
             button9.Click += button9_Click;
             // 
-            // label18
+            // outputAddWorkers
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(15, 466);
-            label18.Name = "label18";
-            label18.Size = new Size(67, 20);
-            label18.TabIndex = 8;
-            label18.Text = "Вывод ...";
+            outputAddWorkers.AutoSize = true;
+            outputAddWorkers.Location = new Point(15, 466);
+            outputAddWorkers.Name = "outputAddWorkers";
+            outputAddWorkers.Size = new Size(67, 20);
+            outputAddWorkers.TabIndex = 8;
+            outputAddWorkers.Text = "Вывод ...";
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(label11);
+            groupBox4.Controls.Add(outputGetWorkers);
             groupBox4.Controls.Add(button6);
             groupBox4.Controls.Add(button7);
-            groupBox4.Controls.Add(textBox8);
+            groupBox4.Controls.Add(idForGetWorker);
             groupBox4.Controls.Add(label12);
-            groupBox4.Controls.Add(textBox9);
+            groupBox4.Controls.Add(dataWorkersTB);
             groupBox4.ForeColor = Color.White;
             groupBox4.Location = new Point(3, 3);
             groupBox4.Name = "groupBox4";
@@ -723,14 +726,14 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "Получение данных";
             // 
-            // label11
+            // outputGetWorkers
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(6, 466);
-            label11.Name = "label11";
-            label11.Size = new Size(67, 20);
-            label11.TabIndex = 20;
-            label11.Text = "Вывод ...";
+            outputGetWorkers.AutoSize = true;
+            outputGetWorkers.Location = new Point(6, 466);
+            outputGetWorkers.Name = "outputGetWorkers";
+            outputGetWorkers.Size = new Size(67, 20);
+            outputGetWorkers.TabIndex = 20;
+            outputGetWorkers.Text = "Вывод ...";
             // 
             // button6
             // 
@@ -743,6 +746,7 @@
             button6.TabIndex = 4;
             button6.Text = "Получить все";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -755,13 +759,14 @@
             button7.TabIndex = 3;
             button7.Text = "Получить по id";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
-            // textBox8
+            // idForGetWorker
             // 
-            textBox8.Location = new Point(6, 355);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(392, 27);
-            textBox8.TabIndex = 2;
+            idForGetWorker.Location = new Point(6, 355);
+            idForGetWorker.Name = "idForGetWorker";
+            idForGetWorker.Size = new Size(392, 27);
+            idForGetWorker.TabIndex = 2;
             // 
             // label12
             // 
@@ -773,16 +778,16 @@
             label12.TabIndex = 1;
             label12.Text = "Для получения конкретного объекта, введите id";
             // 
-            // textBox9
+            // dataWorkersTB
             // 
-            textBox9.BackColor = Color.FromArgb(69, 69, 69);
-            textBox9.ForeColor = Color.White;
-            textBox9.Location = new Point(6, 26);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.ScrollBars = ScrollBars.Vertical;
-            textBox9.Size = new Size(398, 300);
-            textBox9.TabIndex = 0;
+            dataWorkersTB.BackColor = Color.FromArgb(69, 69, 69);
+            dataWorkersTB.ForeColor = Color.White;
+            dataWorkersTB.Location = new Point(6, 26);
+            dataWorkersTB.Multiline = true;
+            dataWorkersTB.Name = "dataWorkersTB";
+            dataWorkersTB.ScrollBars = ScrollBars.Vertical;
+            dataWorkersTB.Size = new Size(398, 300);
+            dataWorkersTB.TabIndex = 0;
             // 
             // Form1
             // 
@@ -836,7 +841,7 @@
         private Button button3;
         private Button button5;
         private Button button4;
-        private Label label4;
+        private Label outputAddClients;
         private TextBox textBox7;
         private Label label8;
         private TextBox textBox6;
@@ -850,9 +855,9 @@
         private CheckBox checkBox1;
         private Label label10;
         private GroupBox groupBox6;
-        private Label label19;
+        private Label outputDeleteWorker;
         private Button button10;
-        private TextBox textBox14;
+        private TextBox idForDeleteWorker;
         private Label label20;
         private GroupBox groupBox5;
         private CheckBox checkBox2;
@@ -867,14 +872,14 @@
         private Label label17;
         private Button button8;
         private Button button9;
-        private Label label18;
+        private Label outputAddWorkers;
         private GroupBox groupBox4;
-        private Label label11;
+        private Label outputGetWorkers;
         private Button button6;
         private Button button7;
-        private TextBox textBox8;
+        private TextBox idForGetWorker;
         private Label label12;
-        private TextBox textBox9;
+        private TextBox dataWorkersTB;
         private TextBox positionWorkerBox;
         private TextBox salaryWorkersBox;
         private Label label21;
