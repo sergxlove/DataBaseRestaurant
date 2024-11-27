@@ -108,18 +108,32 @@ namespace DataBaseRestaurant
 
         private async void button7_Click(object sender, EventArgs e)
         {
-            var workerService = _serviceProvider.GetService<IWorkersService>();
-            var worker = await workerService!.GetWorkerByIdAsync(Convert.ToInt32(idForGetWorker.Text));
-            if (worker is null)
+            try
             {
-                outputGetWorkers.Text = "not found element";
+                var workerService = _serviceProvider.GetService<IWorkersService>();
+                var worker = await workerService!.GetWorkerByIdAsync(Convert.ToInt32(idForGetWorker.Text));
+                if (worker is null)
+                {
+                    outputGetWorkers.Text = "not found element";
+                }
+                else
+                {
+                    dataWorkersTB.Text = $"ID: {worker.Id} \r\nName: {worker.Name} \r\nEmail: {worker.Email} \r\n" +
+                        $"Number phone: {worker.NumberPhone} \r\nPosition: {worker.Position} \r\n" +
+                        $"Salary: {worker.Salary}\r\n";
+                    outputGetWorkers.Text = "done";
+                }
             }
-            else
+            catch(Exception ex)
             {
-                dataWorkersTB.Text = $"ID: {worker.Id} \r\nName: {worker.Name} \r\nEmail: {worker.Email} \r\n" +
-                    $"Number phone: {worker.NumberPhone} \r\nPosition: {worker.Position} \r\n" +
-                    $"Salary: {worker.Salary}\r\n";
-                outputGetWorkers.Text = "done";
+                if (ex.Message.Length >= 45)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    outputGetWorkers.Text = ex.Message;
+                }
             }
         }
 
