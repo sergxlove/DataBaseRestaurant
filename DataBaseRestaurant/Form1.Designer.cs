@@ -58,11 +58,98 @@
             label1 = new Label();
             textBox1 = new TextBox();
             tabPage2 = new TabPage();
+            groupBox8 = new GroupBox();
+            label18 = new Label();
+            button13 = new Button();
+            textBox10 = new TextBox();
+            label19 = new Label();
+            groupBox7 = new GroupBox();
+            label4 = new Label();
+            button11 = new Button();
+            button12 = new Button();
+            textBox8 = new TextBox();
+            label11 = new Label();
+            textBox9 = new TextBox();
             tabPage3 = new TabPage();
+            groupBox14 = new GroupBox();
+            label32 = new Label();
+            button19 = new Button();
+            button20 = new Button();
+            textBox16 = new TextBox();
+            label33 = new Label();
+            textBox17 = new TextBox();
+            groupBox9 = new GroupBox();
+            label22 = new Label();
+            button14 = new Button();
+            textBox11 = new TextBox();
+            label23 = new Label();
             tabPage4 = new TabPage();
+            groupBox15 = new GroupBox();
+            label34 = new Label();
+            button21 = new Button();
+            button22 = new Button();
+            textBox18 = new TextBox();
+            label35 = new Label();
+            textBox19 = new TextBox();
+            groupBox10 = new GroupBox();
+            label24 = new Label();
+            button15 = new Button();
+            textBox12 = new TextBox();
+            label25 = new Label();
             tabPage5 = new TabPage();
+            groupBox16 = new GroupBox();
+            label36 = new Label();
+            button23 = new Button();
+            button24 = new Button();
+            textBox20 = new TextBox();
+            label37 = new Label();
+            textBox21 = new TextBox();
+            groupBox11 = new GroupBox();
+            label26 = new Label();
+            button16 = new Button();
+            textBox13 = new TextBox();
+            label27 = new Label();
             tabPage6 = new TabPage();
+            groupBox19 = new GroupBox();
+            rattingSupplierBox = new TextBox();
+            autoIdSupplier = new CheckBox();
+            label43 = new Label();
+            numberPhoneSupplierBox = new TextBox();
+            label44 = new Label();
+            emailSupplierBox = new TextBox();
+            label45 = new Label();
+            nameSupplierBox = new TextBox();
+            label46 = new Label();
+            idSupplierBox = new TextBox();
+            label47 = new Label();
+            button29 = new Button();
+            AddSupplier = new Button();
+            outputAddSupplier = new Label();
+            groupBox17 = new GroupBox();
+            outputGetSupplier = new Label();
+            button25 = new Button();
+            button26 = new Button();
+            textBox22 = new TextBox();
+            label39 = new Label();
+            textBox23 = new TextBox();
+            groupBox12 = new GroupBox();
+            outputDeleteSupplier = new Label();
+            button17 = new Button();
+            idForDeleteSupplier = new TextBox();
+            label29 = new Label();
             tabPage7 = new TabPage();
+            groupBox18 = new GroupBox();
+            label40 = new Label();
+            button27 = new Button();
+            button28 = new Button();
+            textBox24 = new TextBox();
+            label41 = new Label();
+            textBox25 = new TextBox();
+            groupBox13 = new GroupBox();
+            label30 = new Label();
+            button18 = new Button();
+            textBox15 = new TextBox();
+            label31 = new Label();
             tabPage8 = new TabPage();
             groupBox6 = new GroupBox();
             outputDeleteWorker = new Label();
@@ -73,7 +160,7 @@
             salaryWorkersBox = new TextBox();
             label21 = new Label();
             positionWorkerBox = new TextBox();
-            checkBox2 = new CheckBox();
+            autoIdWorkers = new CheckBox();
             label13 = new Label();
             numberPhoneWorkersBox = new TextBox();
             label14 = new Label();
@@ -93,105 +180,34 @@
             idForGetWorker = new TextBox();
             label12 = new Label();
             dataWorkersTB = new TextBox();
-            groupBox7 = new GroupBox();
-            label4 = new Label();
-            button11 = new Button();
-            button12 = new Button();
-            textBox8 = new TextBox();
-            label11 = new Label();
-            textBox9 = new TextBox();
-            groupBox8 = new GroupBox();
-            label18 = new Label();
-            button13 = new Button();
-            textBox10 = new TextBox();
-            label19 = new Label();
-            groupBox9 = new GroupBox();
-            label22 = new Label();
-            button14 = new Button();
-            textBox11 = new TextBox();
-            label23 = new Label();
-            groupBox10 = new GroupBox();
-            label24 = new Label();
-            button15 = new Button();
-            textBox12 = new TextBox();
-            label25 = new Label();
-            groupBox11 = new GroupBox();
-            label26 = new Label();
-            button16 = new Button();
-            textBox13 = new TextBox();
-            label27 = new Label();
-            groupBox12 = new GroupBox();
-            label28 = new Label();
-            button17 = new Button();
-            textBox14 = new TextBox();
-            label29 = new Label();
-            groupBox13 = new GroupBox();
-            label30 = new Label();
-            button18 = new Button();
-            textBox15 = new TextBox();
-            label31 = new Label();
-            groupBox14 = new GroupBox();
-            label32 = new Label();
-            button19 = new Button();
-            button20 = new Button();
-            textBox16 = new TextBox();
-            label33 = new Label();
-            textBox17 = new TextBox();
-            groupBox15 = new GroupBox();
-            label34 = new Label();
-            button21 = new Button();
-            button22 = new Button();
-            textBox18 = new TextBox();
-            label35 = new Label();
-            textBox19 = new TextBox();
-            groupBox16 = new GroupBox();
-            label36 = new Label();
-            button23 = new Button();
-            button24 = new Button();
-            textBox20 = new TextBox();
-            label37 = new Label();
-            textBox21 = new TextBox();
-            groupBox17 = new GroupBox();
-            label38 = new Label();
-            button25 = new Button();
-            button26 = new Button();
-            textBox22 = new TextBox();
-            label39 = new Label();
-            textBox23 = new TextBox();
-            groupBox18 = new GroupBox();
-            label40 = new Label();
-            button27 = new Button();
-            button28 = new Button();
-            textBox24 = new TextBox();
-            label41 = new Label();
-            textBox25 = new TextBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             tabPage2.SuspendLayout();
+            groupBox8.SuspendLayout();
+            groupBox7.SuspendLayout();
             tabPage3.SuspendLayout();
+            groupBox14.SuspendLayout();
+            groupBox9.SuspendLayout();
             tabPage4.SuspendLayout();
+            groupBox15.SuspendLayout();
+            groupBox10.SuspendLayout();
             tabPage5.SuspendLayout();
+            groupBox16.SuspendLayout();
+            groupBox11.SuspendLayout();
             tabPage6.SuspendLayout();
+            groupBox19.SuspendLayout();
+            groupBox17.SuspendLayout();
+            groupBox12.SuspendLayout();
             tabPage7.SuspendLayout();
+            groupBox18.SuspendLayout();
+            groupBox13.SuspendLayout();
             tabPage8.SuspendLayout();
             groupBox6.SuspendLayout();
             groupBox5.SuspendLayout();
             groupBox4.SuspendLayout();
-            groupBox7.SuspendLayout();
-            groupBox8.SuspendLayout();
-            groupBox9.SuspendLayout();
-            groupBox10.SuspendLayout();
-            groupBox11.SuspendLayout();
-            groupBox12.SuspendLayout();
-            groupBox13.SuspendLayout();
-            groupBox14.SuspendLayout();
-            groupBox15.SuspendLayout();
-            groupBox16.SuspendLayout();
-            groupBox17.SuspendLayout();
-            groupBox18.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -519,6 +535,135 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "HistoryOrders";
             // 
+            // groupBox8
+            // 
+            groupBox8.Controls.Add(label18);
+            groupBox8.Controls.Add(button13);
+            groupBox8.Controls.Add(textBox10);
+            groupBox8.Controls.Add(label19);
+            groupBox8.ForeColor = Color.White;
+            groupBox8.Location = new Point(860, 6);
+            groupBox8.Name = "groupBox8";
+            groupBox8.Size = new Size(410, 504);
+            groupBox8.TabIndex = 4;
+            groupBox8.TabStop = false;
+            groupBox8.Text = "Удаление данных";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(12, 466);
+            label18.Name = "label18";
+            label18.Size = new Size(67, 20);
+            label18.TabIndex = 7;
+            label18.Text = "Вывод ...";
+            // 
+            // button13
+            // 
+            button13.BackColor = Color.FromArgb(69, 69, 69);
+            button13.FlatStyle = FlatStyle.Flat;
+            button13.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button13.Location = new Point(215, 108);
+            button13.Name = "button13";
+            button13.Size = new Size(189, 56);
+            button13.TabIndex = 5;
+            button13.Text = "Удалить ";
+            button13.UseVisualStyleBackColor = false;
+            // 
+            // textBox10
+            // 
+            textBox10.Location = new Point(12, 65);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(392, 27);
+            textBox10.TabIndex = 6;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label19.Location = new Point(12, 27);
+            label19.Name = "label19";
+            label19.Size = new Size(281, 23);
+            label19.TabIndex = 5;
+            label19.Text = "Для  удаления объекта, введите id";
+            // 
+            // groupBox7
+            // 
+            groupBox7.Controls.Add(label4);
+            groupBox7.Controls.Add(button11);
+            groupBox7.Controls.Add(button12);
+            groupBox7.Controls.Add(textBox8);
+            groupBox7.Controls.Add(label11);
+            groupBox7.Controls.Add(textBox9);
+            groupBox7.ForeColor = Color.White;
+            groupBox7.Location = new Point(6, 6);
+            groupBox7.Name = "groupBox7";
+            groupBox7.Size = new Size(410, 504);
+            groupBox7.TabIndex = 1;
+            groupBox7.TabStop = false;
+            groupBox7.Text = "Получение данных";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(6, 466);
+            label4.Name = "label4";
+            label4.Size = new Size(67, 20);
+            label4.TabIndex = 20;
+            label4.Text = "Вывод ...";
+            // 
+            // button11
+            // 
+            button11.BackColor = Color.FromArgb(69, 69, 69);
+            button11.FlatStyle = FlatStyle.Flat;
+            button11.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button11.Location = new Point(215, 396);
+            button11.Name = "button11";
+            button11.Size = new Size(189, 56);
+            button11.TabIndex = 4;
+            button11.Text = "Получить все";
+            button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            button12.BackColor = Color.FromArgb(69, 69, 69);
+            button12.FlatStyle = FlatStyle.Flat;
+            button12.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button12.Location = new Point(6, 396);
+            button12.Name = "button12";
+            button12.Size = new Size(189, 56);
+            button12.TabIndex = 3;
+            button12.Text = "Получить по id";
+            button12.UseVisualStyleBackColor = false;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(6, 355);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(392, 27);
+            textBox8.TabIndex = 2;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label11.Location = new Point(6, 329);
+            label11.Name = "label11";
+            label11.Size = new Size(392, 23);
+            label11.TabIndex = 1;
+            label11.Text = "Для получения конкретного объекта, введите id";
+            // 
+            // textBox9
+            // 
+            textBox9.BackColor = Color.FromArgb(69, 69, 69);
+            textBox9.ForeColor = Color.White;
+            textBox9.Location = new Point(6, 26);
+            textBox9.Multiline = true;
+            textBox9.Name = "textBox9";
+            textBox9.ScrollBars = ScrollBars.Vertical;
+            textBox9.Size = new Size(398, 300);
+            textBox9.TabIndex = 0;
+            // 
             // tabPage3
             // 
             tabPage3.BackColor = Color.FromArgb(69, 69, 69);
@@ -529,6 +674,135 @@
             tabPage3.Size = new Size(1290, 516);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Ingredients";
+            // 
+            // groupBox14
+            // 
+            groupBox14.Controls.Add(label32);
+            groupBox14.Controls.Add(button19);
+            groupBox14.Controls.Add(button20);
+            groupBox14.Controls.Add(textBox16);
+            groupBox14.Controls.Add(label33);
+            groupBox14.Controls.Add(textBox17);
+            groupBox14.ForeColor = Color.White;
+            groupBox14.Location = new Point(6, 6);
+            groupBox14.Name = "groupBox14";
+            groupBox14.Size = new Size(410, 504);
+            groupBox14.TabIndex = 5;
+            groupBox14.TabStop = false;
+            groupBox14.Text = "Получение данных";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Location = new Point(6, 466);
+            label32.Name = "label32";
+            label32.Size = new Size(67, 20);
+            label32.TabIndex = 20;
+            label32.Text = "Вывод ...";
+            // 
+            // button19
+            // 
+            button19.BackColor = Color.FromArgb(69, 69, 69);
+            button19.FlatStyle = FlatStyle.Flat;
+            button19.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button19.Location = new Point(215, 396);
+            button19.Name = "button19";
+            button19.Size = new Size(189, 56);
+            button19.TabIndex = 4;
+            button19.Text = "Получить все";
+            button19.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            button20.BackColor = Color.FromArgb(69, 69, 69);
+            button20.FlatStyle = FlatStyle.Flat;
+            button20.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button20.Location = new Point(6, 396);
+            button20.Name = "button20";
+            button20.Size = new Size(189, 56);
+            button20.TabIndex = 3;
+            button20.Text = "Получить по id";
+            button20.UseVisualStyleBackColor = false;
+            // 
+            // textBox16
+            // 
+            textBox16.Location = new Point(6, 355);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(392, 27);
+            textBox16.TabIndex = 2;
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label33.Location = new Point(6, 329);
+            label33.Name = "label33";
+            label33.Size = new Size(392, 23);
+            label33.TabIndex = 1;
+            label33.Text = "Для получения конкретного объекта, введите id";
+            // 
+            // textBox17
+            // 
+            textBox17.BackColor = Color.FromArgb(69, 69, 69);
+            textBox17.ForeColor = Color.White;
+            textBox17.Location = new Point(6, 26);
+            textBox17.Multiline = true;
+            textBox17.Name = "textBox17";
+            textBox17.ScrollBars = ScrollBars.Vertical;
+            textBox17.Size = new Size(398, 300);
+            textBox17.TabIndex = 0;
+            // 
+            // groupBox9
+            // 
+            groupBox9.Controls.Add(label22);
+            groupBox9.Controls.Add(button14);
+            groupBox9.Controls.Add(textBox11);
+            groupBox9.Controls.Add(label23);
+            groupBox9.ForeColor = Color.White;
+            groupBox9.Location = new Point(860, 6);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Size = new Size(410, 504);
+            groupBox9.TabIndex = 4;
+            groupBox9.TabStop = false;
+            groupBox9.Text = "Удаление данных";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(12, 466);
+            label22.Name = "label22";
+            label22.Size = new Size(67, 20);
+            label22.TabIndex = 7;
+            label22.Text = "Вывод ...";
+            // 
+            // button14
+            // 
+            button14.BackColor = Color.FromArgb(69, 69, 69);
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button14.Location = new Point(215, 108);
+            button14.Name = "button14";
+            button14.Size = new Size(189, 56);
+            button14.TabIndex = 5;
+            button14.Text = "Удалить ";
+            button14.UseVisualStyleBackColor = false;
+            // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(12, 65);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(392, 27);
+            textBox11.TabIndex = 6;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label23.Location = new Point(12, 27);
+            label23.Name = "label23";
+            label23.Size = new Size(281, 23);
+            label23.TabIndex = 5;
+            label23.Text = "Для  удаления объекта, введите id";
             // 
             // tabPage4
             // 
@@ -541,6 +815,135 @@
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Menu";
             // 
+            // groupBox15
+            // 
+            groupBox15.Controls.Add(label34);
+            groupBox15.Controls.Add(button21);
+            groupBox15.Controls.Add(button22);
+            groupBox15.Controls.Add(textBox18);
+            groupBox15.Controls.Add(label35);
+            groupBox15.Controls.Add(textBox19);
+            groupBox15.ForeColor = Color.White;
+            groupBox15.Location = new Point(6, 6);
+            groupBox15.Name = "groupBox15";
+            groupBox15.Size = new Size(410, 504);
+            groupBox15.TabIndex = 5;
+            groupBox15.TabStop = false;
+            groupBox15.Text = "Получение данных";
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Location = new Point(6, 466);
+            label34.Name = "label34";
+            label34.Size = new Size(67, 20);
+            label34.TabIndex = 20;
+            label34.Text = "Вывод ...";
+            // 
+            // button21
+            // 
+            button21.BackColor = Color.FromArgb(69, 69, 69);
+            button21.FlatStyle = FlatStyle.Flat;
+            button21.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button21.Location = new Point(215, 396);
+            button21.Name = "button21";
+            button21.Size = new Size(189, 56);
+            button21.TabIndex = 4;
+            button21.Text = "Получить все";
+            button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            button22.BackColor = Color.FromArgb(69, 69, 69);
+            button22.FlatStyle = FlatStyle.Flat;
+            button22.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button22.Location = new Point(6, 396);
+            button22.Name = "button22";
+            button22.Size = new Size(189, 56);
+            button22.TabIndex = 3;
+            button22.Text = "Получить по id";
+            button22.UseVisualStyleBackColor = false;
+            // 
+            // textBox18
+            // 
+            textBox18.Location = new Point(6, 355);
+            textBox18.Name = "textBox18";
+            textBox18.Size = new Size(392, 27);
+            textBox18.TabIndex = 2;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label35.Location = new Point(6, 329);
+            label35.Name = "label35";
+            label35.Size = new Size(392, 23);
+            label35.TabIndex = 1;
+            label35.Text = "Для получения конкретного объекта, введите id";
+            // 
+            // textBox19
+            // 
+            textBox19.BackColor = Color.FromArgb(69, 69, 69);
+            textBox19.ForeColor = Color.White;
+            textBox19.Location = new Point(6, 26);
+            textBox19.Multiline = true;
+            textBox19.Name = "textBox19";
+            textBox19.ScrollBars = ScrollBars.Vertical;
+            textBox19.Size = new Size(398, 300);
+            textBox19.TabIndex = 0;
+            // 
+            // groupBox10
+            // 
+            groupBox10.Controls.Add(label24);
+            groupBox10.Controls.Add(button15);
+            groupBox10.Controls.Add(textBox12);
+            groupBox10.Controls.Add(label25);
+            groupBox10.ForeColor = Color.White;
+            groupBox10.Location = new Point(860, 6);
+            groupBox10.Name = "groupBox10";
+            groupBox10.Size = new Size(410, 504);
+            groupBox10.TabIndex = 4;
+            groupBox10.TabStop = false;
+            groupBox10.Text = "Удаление данных";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(12, 466);
+            label24.Name = "label24";
+            label24.Size = new Size(67, 20);
+            label24.TabIndex = 7;
+            label24.Text = "Вывод ...";
+            // 
+            // button15
+            // 
+            button15.BackColor = Color.FromArgb(69, 69, 69);
+            button15.FlatStyle = FlatStyle.Flat;
+            button15.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button15.Location = new Point(215, 108);
+            button15.Name = "button15";
+            button15.Size = new Size(189, 56);
+            button15.TabIndex = 5;
+            button15.Text = "Удалить ";
+            button15.UseVisualStyleBackColor = false;
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(12, 65);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(392, 27);
+            textBox12.TabIndex = 6;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label25.Location = new Point(12, 27);
+            label25.Name = "label25";
+            label25.Size = new Size(281, 23);
+            label25.TabIndex = 5;
+            label25.Text = "Для  удаления объекта, введите id";
+            // 
             // tabPage5
             // 
             tabPage5.BackColor = Color.FromArgb(69, 69, 69);
@@ -552,9 +955,139 @@
             tabPage5.TabIndex = 4;
             tabPage5.Text = "Orders";
             // 
+            // groupBox16
+            // 
+            groupBox16.Controls.Add(label36);
+            groupBox16.Controls.Add(button23);
+            groupBox16.Controls.Add(button24);
+            groupBox16.Controls.Add(textBox20);
+            groupBox16.Controls.Add(label37);
+            groupBox16.Controls.Add(textBox21);
+            groupBox16.ForeColor = Color.White;
+            groupBox16.Location = new Point(6, 6);
+            groupBox16.Name = "groupBox16";
+            groupBox16.Size = new Size(410, 504);
+            groupBox16.TabIndex = 5;
+            groupBox16.TabStop = false;
+            groupBox16.Text = "Получение данных";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Location = new Point(6, 466);
+            label36.Name = "label36";
+            label36.Size = new Size(67, 20);
+            label36.TabIndex = 20;
+            label36.Text = "Вывод ...";
+            // 
+            // button23
+            // 
+            button23.BackColor = Color.FromArgb(69, 69, 69);
+            button23.FlatStyle = FlatStyle.Flat;
+            button23.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button23.Location = new Point(215, 396);
+            button23.Name = "button23";
+            button23.Size = new Size(189, 56);
+            button23.TabIndex = 4;
+            button23.Text = "Получить все";
+            button23.UseVisualStyleBackColor = false;
+            // 
+            // button24
+            // 
+            button24.BackColor = Color.FromArgb(69, 69, 69);
+            button24.FlatStyle = FlatStyle.Flat;
+            button24.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button24.Location = new Point(6, 396);
+            button24.Name = "button24";
+            button24.Size = new Size(189, 56);
+            button24.TabIndex = 3;
+            button24.Text = "Получить по id";
+            button24.UseVisualStyleBackColor = false;
+            // 
+            // textBox20
+            // 
+            textBox20.Location = new Point(6, 355);
+            textBox20.Name = "textBox20";
+            textBox20.Size = new Size(392, 27);
+            textBox20.TabIndex = 2;
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label37.Location = new Point(6, 329);
+            label37.Name = "label37";
+            label37.Size = new Size(392, 23);
+            label37.TabIndex = 1;
+            label37.Text = "Для получения конкретного объекта, введите id";
+            // 
+            // textBox21
+            // 
+            textBox21.BackColor = Color.FromArgb(69, 69, 69);
+            textBox21.ForeColor = Color.White;
+            textBox21.Location = new Point(6, 26);
+            textBox21.Multiline = true;
+            textBox21.Name = "textBox21";
+            textBox21.ScrollBars = ScrollBars.Vertical;
+            textBox21.Size = new Size(398, 300);
+            textBox21.TabIndex = 0;
+            // 
+            // groupBox11
+            // 
+            groupBox11.Controls.Add(label26);
+            groupBox11.Controls.Add(button16);
+            groupBox11.Controls.Add(textBox13);
+            groupBox11.Controls.Add(label27);
+            groupBox11.ForeColor = Color.White;
+            groupBox11.Location = new Point(860, 6);
+            groupBox11.Name = "groupBox11";
+            groupBox11.Size = new Size(410, 504);
+            groupBox11.TabIndex = 4;
+            groupBox11.TabStop = false;
+            groupBox11.Text = "Удаление данных";
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(12, 466);
+            label26.Name = "label26";
+            label26.Size = new Size(67, 20);
+            label26.TabIndex = 7;
+            label26.Text = "Вывод ...";
+            // 
+            // button16
+            // 
+            button16.BackColor = Color.FromArgb(69, 69, 69);
+            button16.FlatStyle = FlatStyle.Flat;
+            button16.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button16.Location = new Point(215, 108);
+            button16.Name = "button16";
+            button16.Size = new Size(189, 56);
+            button16.TabIndex = 5;
+            button16.Text = "Удалить ";
+            button16.UseVisualStyleBackColor = false;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(12, 65);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(392, 27);
+            textBox13.TabIndex = 6;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label27.Location = new Point(12, 27);
+            label27.Name = "label27";
+            label27.Size = new Size(281, 23);
+            label27.TabIndex = 5;
+            label27.Text = "Для  удаления объекта, введите id";
+            // 
             // tabPage6
             // 
             tabPage6.BackColor = Color.FromArgb(69, 69, 69);
+            tabPage6.Controls.Add(groupBox19);
             tabPage6.Controls.Add(groupBox17);
             tabPage6.Controls.Add(groupBox12);
             tabPage6.Location = new Point(4, 29);
@@ -562,6 +1095,292 @@
             tabPage6.Size = new Size(1290, 516);
             tabPage6.TabIndex = 5;
             tabPage6.Text = "Suppliers";
+            // 
+            // groupBox19
+            // 
+            groupBox19.Controls.Add(rattingSupplierBox);
+            groupBox19.Controls.Add(autoIdSupplier);
+            groupBox19.Controls.Add(label43);
+            groupBox19.Controls.Add(numberPhoneSupplierBox);
+            groupBox19.Controls.Add(label44);
+            groupBox19.Controls.Add(emailSupplierBox);
+            groupBox19.Controls.Add(label45);
+            groupBox19.Controls.Add(nameSupplierBox);
+            groupBox19.Controls.Add(label46);
+            groupBox19.Controls.Add(idSupplierBox);
+            groupBox19.Controls.Add(label47);
+            groupBox19.Controls.Add(button29);
+            groupBox19.Controls.Add(AddSupplier);
+            groupBox19.Controls.Add(outputAddSupplier);
+            groupBox19.ForeColor = Color.White;
+            groupBox19.Location = new Point(433, 6);
+            groupBox19.Name = "groupBox19";
+            groupBox19.Size = new Size(410, 504);
+            groupBox19.TabIndex = 6;
+            groupBox19.TabStop = false;
+            groupBox19.Text = "Добавление/обновление данных";
+            // 
+            // rattingSupplierBox
+            // 
+            rattingSupplierBox.Location = new Point(168, 164);
+            rattingSupplierBox.Name = "rattingSupplierBox";
+            rattingSupplierBox.Size = new Size(236, 27);
+            rattingSupplierBox.TabIndex = 20;
+            // 
+            // autoIdSupplier
+            // 
+            autoIdSupplier.AutoSize = true;
+            autoIdSupplier.Location = new Point(15, 353);
+            autoIdSupplier.Name = "autoIdSupplier";
+            autoIdSupplier.Size = new Size(256, 24);
+            autoIdSupplier.TabIndex = 19;
+            autoIdSupplier.Text = "Генерировать ID автоматически";
+            autoIdSupplier.UseVisualStyleBackColor = true;
+            autoIdSupplier.CheckedChanged += autoIdSupplier_CheckedChanged;
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label43.Location = new Point(15, 167);
+            label43.Name = "label43";
+            label43.Size = new Size(75, 25);
+            label43.TabIndex = 17;
+            label43.Text = "Рейтинг";
+            // 
+            // numberPhoneSupplierBox
+            // 
+            numberPhoneSupplierBox.Location = new Point(168, 131);
+            numberPhoneSupplierBox.Name = "numberPhoneSupplierBox";
+            numberPhoneSupplierBox.Size = new Size(236, 27);
+            numberPhoneSupplierBox.TabIndex = 15;
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label44.Location = new Point(15, 130);
+            label44.Name = "label44";
+            label44.Size = new Size(150, 25);
+            label44.TabIndex = 16;
+            label44.Text = "Номер телефона";
+            // 
+            // emailSupplierBox
+            // 
+            emailSupplierBox.Location = new Point(168, 98);
+            emailSupplierBox.Name = "emailSupplierBox";
+            emailSupplierBox.Size = new Size(236, 27);
+            emailSupplierBox.TabIndex = 13;
+            // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label45.Location = new Point(15, 97);
+            label45.Name = "label45";
+            label45.Size = new Size(109, 25);
+            label45.TabIndex = 14;
+            label45.Text = "Почта email";
+            // 
+            // nameSupplierBox
+            // 
+            nameSupplierBox.Location = new Point(168, 65);
+            nameSupplierBox.Name = "nameSupplierBox";
+            nameSupplierBox.Size = new Size(236, 27);
+            nameSupplierBox.TabIndex = 11;
+            // 
+            // label46
+            // 
+            label46.AutoSize = true;
+            label46.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label46.Location = new Point(15, 64);
+            label46.Name = "label46";
+            label46.Size = new Size(52, 25);
+            label46.TabIndex = 12;
+            label46.Text = "ФИО";
+            // 
+            // idSupplierBox
+            // 
+            idSupplierBox.Location = new Point(168, 31);
+            idSupplierBox.Name = "idSupplierBox";
+            idSupplierBox.Size = new Size(236, 27);
+            idSupplierBox.TabIndex = 8;
+            // 
+            // label47
+            // 
+            label47.AutoSize = true;
+            label47.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label47.Location = new Point(15, 30);
+            label47.Name = "label47";
+            label47.Size = new Size(30, 25);
+            label47.TabIndex = 10;
+            label47.Text = "ID";
+            // 
+            // button29
+            // 
+            button29.BackColor = Color.FromArgb(69, 69, 69);
+            button29.FlatStyle = FlatStyle.Flat;
+            button29.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button29.Location = new Point(215, 396);
+            button29.Name = "button29";
+            button29.Size = new Size(189, 56);
+            button29.TabIndex = 9;
+            button29.Text = "Обновить";
+            button29.UseVisualStyleBackColor = false;
+            button29.Click += button29_Click;
+            // 
+            // AddSupplier
+            // 
+            AddSupplier.BackColor = Color.FromArgb(69, 69, 69);
+            AddSupplier.FlatStyle = FlatStyle.Flat;
+            AddSupplier.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            AddSupplier.Location = new Point(6, 396);
+            AddSupplier.Name = "AddSupplier";
+            AddSupplier.Size = new Size(189, 56);
+            AddSupplier.TabIndex = 5;
+            AddSupplier.Text = "Добавить";
+            AddSupplier.UseVisualStyleBackColor = false;
+            AddSupplier.Click += button30_Click;
+            // 
+            // outputAddSupplier
+            // 
+            outputAddSupplier.AutoSize = true;
+            outputAddSupplier.Location = new Point(15, 466);
+            outputAddSupplier.Name = "outputAddSupplier";
+            outputAddSupplier.Size = new Size(67, 20);
+            outputAddSupplier.TabIndex = 8;
+            outputAddSupplier.Text = "Вывод ...";
+            // 
+            // groupBox17
+            // 
+            groupBox17.Controls.Add(outputGetSupplier);
+            groupBox17.Controls.Add(button25);
+            groupBox17.Controls.Add(button26);
+            groupBox17.Controls.Add(textBox22);
+            groupBox17.Controls.Add(label39);
+            groupBox17.Controls.Add(textBox23);
+            groupBox17.ForeColor = Color.White;
+            groupBox17.Location = new Point(6, 6);
+            groupBox17.Name = "groupBox17";
+            groupBox17.Size = new Size(410, 504);
+            groupBox17.TabIndex = 5;
+            groupBox17.TabStop = false;
+            groupBox17.Text = "Получение данных";
+            // 
+            // outputGetSupplier
+            // 
+            outputGetSupplier.AutoSize = true;
+            outputGetSupplier.Location = new Point(6, 466);
+            outputGetSupplier.Name = "outputGetSupplier";
+            outputGetSupplier.Size = new Size(67, 20);
+            outputGetSupplier.TabIndex = 20;
+            outputGetSupplier.Text = "Вывод ...";
+            // 
+            // button25
+            // 
+            button25.BackColor = Color.FromArgb(69, 69, 69);
+            button25.FlatStyle = FlatStyle.Flat;
+            button25.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button25.Location = new Point(215, 396);
+            button25.Name = "button25";
+            button25.Size = new Size(189, 56);
+            button25.TabIndex = 4;
+            button25.Text = "Получить все";
+            button25.UseVisualStyleBackColor = false;
+            button25.Click += button25_Click;
+            // 
+            // button26
+            // 
+            button26.BackColor = Color.FromArgb(69, 69, 69);
+            button26.FlatStyle = FlatStyle.Flat;
+            button26.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button26.Location = new Point(6, 396);
+            button26.Name = "button26";
+            button26.Size = new Size(189, 56);
+            button26.TabIndex = 3;
+            button26.Text = "Получить по id";
+            button26.UseVisualStyleBackColor = false;
+            // 
+            // textBox22
+            // 
+            textBox22.Location = new Point(6, 355);
+            textBox22.Name = "textBox22";
+            textBox22.Size = new Size(392, 27);
+            textBox22.TabIndex = 2;
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label39.Location = new Point(6, 329);
+            label39.Name = "label39";
+            label39.Size = new Size(392, 23);
+            label39.TabIndex = 1;
+            label39.Text = "Для получения конкретного объекта, введите id";
+            // 
+            // textBox23
+            // 
+            textBox23.BackColor = Color.FromArgb(69, 69, 69);
+            textBox23.ForeColor = Color.White;
+            textBox23.Location = new Point(6, 26);
+            textBox23.Multiline = true;
+            textBox23.Name = "textBox23";
+            textBox23.ScrollBars = ScrollBars.Vertical;
+            textBox23.Size = new Size(398, 300);
+            textBox23.TabIndex = 0;
+            // 
+            // groupBox12
+            // 
+            groupBox12.Controls.Add(outputDeleteSupplier);
+            groupBox12.Controls.Add(button17);
+            groupBox12.Controls.Add(idForDeleteSupplier);
+            groupBox12.Controls.Add(label29);
+            groupBox12.ForeColor = Color.White;
+            groupBox12.Location = new Point(860, 6);
+            groupBox12.Name = "groupBox12";
+            groupBox12.Size = new Size(410, 504);
+            groupBox12.TabIndex = 4;
+            groupBox12.TabStop = false;
+            groupBox12.Text = "Удаление данных";
+            // 
+            // outputDeleteSupplier
+            // 
+            outputDeleteSupplier.AutoSize = true;
+            outputDeleteSupplier.Location = new Point(12, 466);
+            outputDeleteSupplier.Name = "outputDeleteSupplier";
+            outputDeleteSupplier.Size = new Size(67, 20);
+            outputDeleteSupplier.TabIndex = 7;
+            outputDeleteSupplier.Text = "Вывод ...";
+            // 
+            // button17
+            // 
+            button17.BackColor = Color.FromArgb(69, 69, 69);
+            button17.FlatStyle = FlatStyle.Flat;
+            button17.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button17.Location = new Point(215, 108);
+            button17.Name = "button17";
+            button17.Size = new Size(189, 56);
+            button17.TabIndex = 5;
+            button17.Text = "Удалить ";
+            button17.UseVisualStyleBackColor = false;
+            button17.Click += button17_Click;
+            // 
+            // idForDeleteSupplier
+            // 
+            idForDeleteSupplier.Location = new Point(12, 65);
+            idForDeleteSupplier.Name = "idForDeleteSupplier";
+            idForDeleteSupplier.Size = new Size(392, 27);
+            idForDeleteSupplier.TabIndex = 6;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label29.Location = new Point(12, 27);
+            label29.Name = "label29";
+            label29.Size = new Size(281, 23);
+            label29.TabIndex = 5;
+            label29.Text = "Для  удаления объекта, введите id";
             // 
             // tabPage7
             // 
@@ -573,6 +1392,135 @@
             tabPage7.Size = new Size(1290, 516);
             tabPage7.TabIndex = 6;
             tabPage7.Text = "Tables";
+            // 
+            // groupBox18
+            // 
+            groupBox18.Controls.Add(label40);
+            groupBox18.Controls.Add(button27);
+            groupBox18.Controls.Add(button28);
+            groupBox18.Controls.Add(textBox24);
+            groupBox18.Controls.Add(label41);
+            groupBox18.Controls.Add(textBox25);
+            groupBox18.ForeColor = Color.White;
+            groupBox18.Location = new Point(6, 6);
+            groupBox18.Name = "groupBox18";
+            groupBox18.Size = new Size(410, 504);
+            groupBox18.TabIndex = 5;
+            groupBox18.TabStop = false;
+            groupBox18.Text = "Получение данных";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Location = new Point(6, 466);
+            label40.Name = "label40";
+            label40.Size = new Size(67, 20);
+            label40.TabIndex = 20;
+            label40.Text = "Вывод ...";
+            // 
+            // button27
+            // 
+            button27.BackColor = Color.FromArgb(69, 69, 69);
+            button27.FlatStyle = FlatStyle.Flat;
+            button27.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button27.Location = new Point(215, 396);
+            button27.Name = "button27";
+            button27.Size = new Size(189, 56);
+            button27.TabIndex = 4;
+            button27.Text = "Получить все";
+            button27.UseVisualStyleBackColor = false;
+            // 
+            // button28
+            // 
+            button28.BackColor = Color.FromArgb(69, 69, 69);
+            button28.FlatStyle = FlatStyle.Flat;
+            button28.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button28.Location = new Point(6, 396);
+            button28.Name = "button28";
+            button28.Size = new Size(189, 56);
+            button28.TabIndex = 3;
+            button28.Text = "Получить по id";
+            button28.UseVisualStyleBackColor = false;
+            // 
+            // textBox24
+            // 
+            textBox24.Location = new Point(6, 355);
+            textBox24.Name = "textBox24";
+            textBox24.Size = new Size(392, 27);
+            textBox24.TabIndex = 2;
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label41.Location = new Point(6, 329);
+            label41.Name = "label41";
+            label41.Size = new Size(392, 23);
+            label41.TabIndex = 1;
+            label41.Text = "Для получения конкретного объекта, введите id";
+            // 
+            // textBox25
+            // 
+            textBox25.BackColor = Color.FromArgb(69, 69, 69);
+            textBox25.ForeColor = Color.White;
+            textBox25.Location = new Point(6, 26);
+            textBox25.Multiline = true;
+            textBox25.Name = "textBox25";
+            textBox25.ScrollBars = ScrollBars.Vertical;
+            textBox25.Size = new Size(398, 300);
+            textBox25.TabIndex = 0;
+            // 
+            // groupBox13
+            // 
+            groupBox13.Controls.Add(label30);
+            groupBox13.Controls.Add(button18);
+            groupBox13.Controls.Add(textBox15);
+            groupBox13.Controls.Add(label31);
+            groupBox13.ForeColor = Color.White;
+            groupBox13.Location = new Point(860, 6);
+            groupBox13.Name = "groupBox13";
+            groupBox13.Size = new Size(410, 504);
+            groupBox13.TabIndex = 4;
+            groupBox13.TabStop = false;
+            groupBox13.Text = "Удаление данных";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(12, 466);
+            label30.Name = "label30";
+            label30.Size = new Size(67, 20);
+            label30.TabIndex = 7;
+            label30.Text = "Вывод ...";
+            // 
+            // button18
+            // 
+            button18.BackColor = Color.FromArgb(69, 69, 69);
+            button18.FlatStyle = FlatStyle.Flat;
+            button18.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button18.Location = new Point(215, 108);
+            button18.Name = "button18";
+            button18.Size = new Size(189, 56);
+            button18.TabIndex = 5;
+            button18.Text = "Удалить ";
+            button18.UseVisualStyleBackColor = false;
+            // 
+            // textBox15
+            // 
+            textBox15.Location = new Point(12, 65);
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(392, 27);
+            textBox15.TabIndex = 6;
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label31.Location = new Point(12, 27);
+            label31.Name = "label31";
+            label31.Size = new Size(281, 23);
+            label31.TabIndex = 5;
+            label31.Text = "Для  удаления объекта, введите id";
             // 
             // tabPage8
             // 
@@ -644,7 +1592,7 @@
             groupBox5.Controls.Add(salaryWorkersBox);
             groupBox5.Controls.Add(label21);
             groupBox5.Controls.Add(positionWorkerBox);
-            groupBox5.Controls.Add(checkBox2);
+            groupBox5.Controls.Add(autoIdWorkers);
             groupBox5.Controls.Add(label13);
             groupBox5.Controls.Add(numberPhoneWorkersBox);
             groupBox5.Controls.Add(label14);
@@ -689,15 +1637,16 @@
             positionWorkerBox.Size = new Size(236, 27);
             positionWorkerBox.TabIndex = 20;
             // 
-            // checkBox2
+            // autoIdWorkers
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(15, 353);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(256, 24);
-            checkBox2.TabIndex = 19;
-            checkBox2.Text = "Генерировать ID автоматически";
-            checkBox2.UseVisualStyleBackColor = true;
+            autoIdWorkers.AutoSize = true;
+            autoIdWorkers.Location = new Point(15, 353);
+            autoIdWorkers.Name = "autoIdWorkers";
+            autoIdWorkers.Size = new Size(256, 24);
+            autoIdWorkers.TabIndex = 19;
+            autoIdWorkers.Text = "Генерировать ID автоматически";
+            autoIdWorkers.UseVisualStyleBackColor = true;
+            autoIdWorkers.CheckedChanged += autoIdWorkers_CheckedChanged;
             // 
             // label13
             // 
@@ -891,780 +1840,6 @@
             dataWorkersTB.Size = new Size(398, 300);
             dataWorkersTB.TabIndex = 0;
             // 
-            // groupBox7
-            // 
-            groupBox7.Controls.Add(label4);
-            groupBox7.Controls.Add(button11);
-            groupBox7.Controls.Add(button12);
-            groupBox7.Controls.Add(textBox8);
-            groupBox7.Controls.Add(label11);
-            groupBox7.Controls.Add(textBox9);
-            groupBox7.ForeColor = Color.White;
-            groupBox7.Location = new Point(6, 6);
-            groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(410, 504);
-            groupBox7.TabIndex = 1;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "Получение данных";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 466);
-            label4.Name = "label4";
-            label4.Size = new Size(67, 20);
-            label4.TabIndex = 20;
-            label4.Text = "Вывод ...";
-            // 
-            // button11
-            // 
-            button11.BackColor = Color.FromArgb(69, 69, 69);
-            button11.FlatStyle = FlatStyle.Flat;
-            button11.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button11.Location = new Point(215, 396);
-            button11.Name = "button11";
-            button11.Size = new Size(189, 56);
-            button11.TabIndex = 4;
-            button11.Text = "Получить все";
-            button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            button12.BackColor = Color.FromArgb(69, 69, 69);
-            button12.FlatStyle = FlatStyle.Flat;
-            button12.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button12.Location = new Point(6, 396);
-            button12.Name = "button12";
-            button12.Size = new Size(189, 56);
-            button12.TabIndex = 3;
-            button12.Text = "Получить по id";
-            button12.UseVisualStyleBackColor = false;
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(6, 355);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(392, 27);
-            textBox8.TabIndex = 2;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label11.Location = new Point(6, 329);
-            label11.Name = "label11";
-            label11.Size = new Size(392, 23);
-            label11.TabIndex = 1;
-            label11.Text = "Для получения конкретного объекта, введите id";
-            // 
-            // textBox9
-            // 
-            textBox9.BackColor = Color.FromArgb(69, 69, 69);
-            textBox9.ForeColor = Color.White;
-            textBox9.Location = new Point(6, 26);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.ScrollBars = ScrollBars.Vertical;
-            textBox9.Size = new Size(398, 300);
-            textBox9.TabIndex = 0;
-            // 
-            // groupBox8
-            // 
-            groupBox8.Controls.Add(label18);
-            groupBox8.Controls.Add(button13);
-            groupBox8.Controls.Add(textBox10);
-            groupBox8.Controls.Add(label19);
-            groupBox8.ForeColor = Color.White;
-            groupBox8.Location = new Point(860, 6);
-            groupBox8.Name = "groupBox8";
-            groupBox8.Size = new Size(410, 504);
-            groupBox8.TabIndex = 4;
-            groupBox8.TabStop = false;
-            groupBox8.Text = "Удаление данных";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new Point(12, 466);
-            label18.Name = "label18";
-            label18.Size = new Size(67, 20);
-            label18.TabIndex = 7;
-            label18.Text = "Вывод ...";
-            // 
-            // button13
-            // 
-            button13.BackColor = Color.FromArgb(69, 69, 69);
-            button13.FlatStyle = FlatStyle.Flat;
-            button13.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button13.Location = new Point(215, 108);
-            button13.Name = "button13";
-            button13.Size = new Size(189, 56);
-            button13.TabIndex = 5;
-            button13.Text = "Удалить ";
-            button13.UseVisualStyleBackColor = false;
-            // 
-            // textBox10
-            // 
-            textBox10.Location = new Point(12, 65);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(392, 27);
-            textBox10.TabIndex = 6;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label19.Location = new Point(12, 27);
-            label19.Name = "label19";
-            label19.Size = new Size(281, 23);
-            label19.TabIndex = 5;
-            label19.Text = "Для  удаления объекта, введите id";
-            // 
-            // groupBox9
-            // 
-            groupBox9.Controls.Add(label22);
-            groupBox9.Controls.Add(button14);
-            groupBox9.Controls.Add(textBox11);
-            groupBox9.Controls.Add(label23);
-            groupBox9.ForeColor = Color.White;
-            groupBox9.Location = new Point(860, 6);
-            groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(410, 504);
-            groupBox9.TabIndex = 4;
-            groupBox9.TabStop = false;
-            groupBox9.Text = "Удаление данных";
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Location = new Point(12, 466);
-            label22.Name = "label22";
-            label22.Size = new Size(67, 20);
-            label22.TabIndex = 7;
-            label22.Text = "Вывод ...";
-            // 
-            // button14
-            // 
-            button14.BackColor = Color.FromArgb(69, 69, 69);
-            button14.FlatStyle = FlatStyle.Flat;
-            button14.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button14.Location = new Point(215, 108);
-            button14.Name = "button14";
-            button14.Size = new Size(189, 56);
-            button14.TabIndex = 5;
-            button14.Text = "Удалить ";
-            button14.UseVisualStyleBackColor = false;
-            // 
-            // textBox11
-            // 
-            textBox11.Location = new Point(12, 65);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(392, 27);
-            textBox11.TabIndex = 6;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label23.Location = new Point(12, 27);
-            label23.Name = "label23";
-            label23.Size = new Size(281, 23);
-            label23.TabIndex = 5;
-            label23.Text = "Для  удаления объекта, введите id";
-            // 
-            // groupBox10
-            // 
-            groupBox10.Controls.Add(label24);
-            groupBox10.Controls.Add(button15);
-            groupBox10.Controls.Add(textBox12);
-            groupBox10.Controls.Add(label25);
-            groupBox10.ForeColor = Color.White;
-            groupBox10.Location = new Point(860, 6);
-            groupBox10.Name = "groupBox10";
-            groupBox10.Size = new Size(410, 504);
-            groupBox10.TabIndex = 4;
-            groupBox10.TabStop = false;
-            groupBox10.Text = "Удаление данных";
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Location = new Point(12, 466);
-            label24.Name = "label24";
-            label24.Size = new Size(67, 20);
-            label24.TabIndex = 7;
-            label24.Text = "Вывод ...";
-            // 
-            // button15
-            // 
-            button15.BackColor = Color.FromArgb(69, 69, 69);
-            button15.FlatStyle = FlatStyle.Flat;
-            button15.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button15.Location = new Point(215, 108);
-            button15.Name = "button15";
-            button15.Size = new Size(189, 56);
-            button15.TabIndex = 5;
-            button15.Text = "Удалить ";
-            button15.UseVisualStyleBackColor = false;
-            // 
-            // textBox12
-            // 
-            textBox12.Location = new Point(12, 65);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(392, 27);
-            textBox12.TabIndex = 6;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label25.Location = new Point(12, 27);
-            label25.Name = "label25";
-            label25.Size = new Size(281, 23);
-            label25.TabIndex = 5;
-            label25.Text = "Для  удаления объекта, введите id";
-            // 
-            // groupBox11
-            // 
-            groupBox11.Controls.Add(label26);
-            groupBox11.Controls.Add(button16);
-            groupBox11.Controls.Add(textBox13);
-            groupBox11.Controls.Add(label27);
-            groupBox11.ForeColor = Color.White;
-            groupBox11.Location = new Point(860, 6);
-            groupBox11.Name = "groupBox11";
-            groupBox11.Size = new Size(410, 504);
-            groupBox11.TabIndex = 4;
-            groupBox11.TabStop = false;
-            groupBox11.Text = "Удаление данных";
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Location = new Point(12, 466);
-            label26.Name = "label26";
-            label26.Size = new Size(67, 20);
-            label26.TabIndex = 7;
-            label26.Text = "Вывод ...";
-            // 
-            // button16
-            // 
-            button16.BackColor = Color.FromArgb(69, 69, 69);
-            button16.FlatStyle = FlatStyle.Flat;
-            button16.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button16.Location = new Point(215, 108);
-            button16.Name = "button16";
-            button16.Size = new Size(189, 56);
-            button16.TabIndex = 5;
-            button16.Text = "Удалить ";
-            button16.UseVisualStyleBackColor = false;
-            // 
-            // textBox13
-            // 
-            textBox13.Location = new Point(12, 65);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(392, 27);
-            textBox13.TabIndex = 6;
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label27.Location = new Point(12, 27);
-            label27.Name = "label27";
-            label27.Size = new Size(281, 23);
-            label27.TabIndex = 5;
-            label27.Text = "Для  удаления объекта, введите id";
-            // 
-            // groupBox12
-            // 
-            groupBox12.Controls.Add(label28);
-            groupBox12.Controls.Add(button17);
-            groupBox12.Controls.Add(textBox14);
-            groupBox12.Controls.Add(label29);
-            groupBox12.ForeColor = Color.White;
-            groupBox12.Location = new Point(860, 6);
-            groupBox12.Name = "groupBox12";
-            groupBox12.Size = new Size(410, 504);
-            groupBox12.TabIndex = 4;
-            groupBox12.TabStop = false;
-            groupBox12.Text = "Удаление данных";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Location = new Point(12, 466);
-            label28.Name = "label28";
-            label28.Size = new Size(67, 20);
-            label28.TabIndex = 7;
-            label28.Text = "Вывод ...";
-            // 
-            // button17
-            // 
-            button17.BackColor = Color.FromArgb(69, 69, 69);
-            button17.FlatStyle = FlatStyle.Flat;
-            button17.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button17.Location = new Point(215, 108);
-            button17.Name = "button17";
-            button17.Size = new Size(189, 56);
-            button17.TabIndex = 5;
-            button17.Text = "Удалить ";
-            button17.UseVisualStyleBackColor = false;
-            // 
-            // textBox14
-            // 
-            textBox14.Location = new Point(12, 65);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(392, 27);
-            textBox14.TabIndex = 6;
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label29.Location = new Point(12, 27);
-            label29.Name = "label29";
-            label29.Size = new Size(281, 23);
-            label29.TabIndex = 5;
-            label29.Text = "Для  удаления объекта, введите id";
-            // 
-            // groupBox13
-            // 
-            groupBox13.Controls.Add(label30);
-            groupBox13.Controls.Add(button18);
-            groupBox13.Controls.Add(textBox15);
-            groupBox13.Controls.Add(label31);
-            groupBox13.ForeColor = Color.White;
-            groupBox13.Location = new Point(860, 6);
-            groupBox13.Name = "groupBox13";
-            groupBox13.Size = new Size(410, 504);
-            groupBox13.TabIndex = 4;
-            groupBox13.TabStop = false;
-            groupBox13.Text = "Удаление данных";
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Location = new Point(12, 466);
-            label30.Name = "label30";
-            label30.Size = new Size(67, 20);
-            label30.TabIndex = 7;
-            label30.Text = "Вывод ...";
-            // 
-            // button18
-            // 
-            button18.BackColor = Color.FromArgb(69, 69, 69);
-            button18.FlatStyle = FlatStyle.Flat;
-            button18.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button18.Location = new Point(215, 108);
-            button18.Name = "button18";
-            button18.Size = new Size(189, 56);
-            button18.TabIndex = 5;
-            button18.Text = "Удалить ";
-            button18.UseVisualStyleBackColor = false;
-            // 
-            // textBox15
-            // 
-            textBox15.Location = new Point(12, 65);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(392, 27);
-            textBox15.TabIndex = 6;
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label31.Location = new Point(12, 27);
-            label31.Name = "label31";
-            label31.Size = new Size(281, 23);
-            label31.TabIndex = 5;
-            label31.Text = "Для  удаления объекта, введите id";
-            // 
-            // groupBox14
-            // 
-            groupBox14.Controls.Add(label32);
-            groupBox14.Controls.Add(button19);
-            groupBox14.Controls.Add(button20);
-            groupBox14.Controls.Add(textBox16);
-            groupBox14.Controls.Add(label33);
-            groupBox14.Controls.Add(textBox17);
-            groupBox14.ForeColor = Color.White;
-            groupBox14.Location = new Point(6, 6);
-            groupBox14.Name = "groupBox14";
-            groupBox14.Size = new Size(410, 504);
-            groupBox14.TabIndex = 5;
-            groupBox14.TabStop = false;
-            groupBox14.Text = "Получение данных";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Location = new Point(6, 466);
-            label32.Name = "label32";
-            label32.Size = new Size(67, 20);
-            label32.TabIndex = 20;
-            label32.Text = "Вывод ...";
-            // 
-            // button19
-            // 
-            button19.BackColor = Color.FromArgb(69, 69, 69);
-            button19.FlatStyle = FlatStyle.Flat;
-            button19.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button19.Location = new Point(215, 396);
-            button19.Name = "button19";
-            button19.Size = new Size(189, 56);
-            button19.TabIndex = 4;
-            button19.Text = "Получить все";
-            button19.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            button20.BackColor = Color.FromArgb(69, 69, 69);
-            button20.FlatStyle = FlatStyle.Flat;
-            button20.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button20.Location = new Point(6, 396);
-            button20.Name = "button20";
-            button20.Size = new Size(189, 56);
-            button20.TabIndex = 3;
-            button20.Text = "Получить по id";
-            button20.UseVisualStyleBackColor = false;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(6, 355);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(392, 27);
-            textBox16.TabIndex = 2;
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label33.Location = new Point(6, 329);
-            label33.Name = "label33";
-            label33.Size = new Size(392, 23);
-            label33.TabIndex = 1;
-            label33.Text = "Для получения конкретного объекта, введите id";
-            // 
-            // textBox17
-            // 
-            textBox17.BackColor = Color.FromArgb(69, 69, 69);
-            textBox17.ForeColor = Color.White;
-            textBox17.Location = new Point(6, 26);
-            textBox17.Multiline = true;
-            textBox17.Name = "textBox17";
-            textBox17.ScrollBars = ScrollBars.Vertical;
-            textBox17.Size = new Size(398, 300);
-            textBox17.TabIndex = 0;
-            // 
-            // groupBox15
-            // 
-            groupBox15.Controls.Add(label34);
-            groupBox15.Controls.Add(button21);
-            groupBox15.Controls.Add(button22);
-            groupBox15.Controls.Add(textBox18);
-            groupBox15.Controls.Add(label35);
-            groupBox15.Controls.Add(textBox19);
-            groupBox15.ForeColor = Color.White;
-            groupBox15.Location = new Point(6, 6);
-            groupBox15.Name = "groupBox15";
-            groupBox15.Size = new Size(410, 504);
-            groupBox15.TabIndex = 5;
-            groupBox15.TabStop = false;
-            groupBox15.Text = "Получение данных";
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.Location = new Point(6, 466);
-            label34.Name = "label34";
-            label34.Size = new Size(67, 20);
-            label34.TabIndex = 20;
-            label34.Text = "Вывод ...";
-            // 
-            // button21
-            // 
-            button21.BackColor = Color.FromArgb(69, 69, 69);
-            button21.FlatStyle = FlatStyle.Flat;
-            button21.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button21.Location = new Point(215, 396);
-            button21.Name = "button21";
-            button21.Size = new Size(189, 56);
-            button21.TabIndex = 4;
-            button21.Text = "Получить все";
-            button21.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            button22.BackColor = Color.FromArgb(69, 69, 69);
-            button22.FlatStyle = FlatStyle.Flat;
-            button22.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button22.Location = new Point(6, 396);
-            button22.Name = "button22";
-            button22.Size = new Size(189, 56);
-            button22.TabIndex = 3;
-            button22.Text = "Получить по id";
-            button22.UseVisualStyleBackColor = false;
-            // 
-            // textBox18
-            // 
-            textBox18.Location = new Point(6, 355);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(392, 27);
-            textBox18.TabIndex = 2;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label35.Location = new Point(6, 329);
-            label35.Name = "label35";
-            label35.Size = new Size(392, 23);
-            label35.TabIndex = 1;
-            label35.Text = "Для получения конкретного объекта, введите id";
-            // 
-            // textBox19
-            // 
-            textBox19.BackColor = Color.FromArgb(69, 69, 69);
-            textBox19.ForeColor = Color.White;
-            textBox19.Location = new Point(6, 26);
-            textBox19.Multiline = true;
-            textBox19.Name = "textBox19";
-            textBox19.ScrollBars = ScrollBars.Vertical;
-            textBox19.Size = new Size(398, 300);
-            textBox19.TabIndex = 0;
-            // 
-            // groupBox16
-            // 
-            groupBox16.Controls.Add(label36);
-            groupBox16.Controls.Add(button23);
-            groupBox16.Controls.Add(button24);
-            groupBox16.Controls.Add(textBox20);
-            groupBox16.Controls.Add(label37);
-            groupBox16.Controls.Add(textBox21);
-            groupBox16.ForeColor = Color.White;
-            groupBox16.Location = new Point(6, 6);
-            groupBox16.Name = "groupBox16";
-            groupBox16.Size = new Size(410, 504);
-            groupBox16.TabIndex = 5;
-            groupBox16.TabStop = false;
-            groupBox16.Text = "Получение данных";
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.Location = new Point(6, 466);
-            label36.Name = "label36";
-            label36.Size = new Size(67, 20);
-            label36.TabIndex = 20;
-            label36.Text = "Вывод ...";
-            // 
-            // button23
-            // 
-            button23.BackColor = Color.FromArgb(69, 69, 69);
-            button23.FlatStyle = FlatStyle.Flat;
-            button23.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button23.Location = new Point(215, 396);
-            button23.Name = "button23";
-            button23.Size = new Size(189, 56);
-            button23.TabIndex = 4;
-            button23.Text = "Получить все";
-            button23.UseVisualStyleBackColor = false;
-            // 
-            // button24
-            // 
-            button24.BackColor = Color.FromArgb(69, 69, 69);
-            button24.FlatStyle = FlatStyle.Flat;
-            button24.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button24.Location = new Point(6, 396);
-            button24.Name = "button24";
-            button24.Size = new Size(189, 56);
-            button24.TabIndex = 3;
-            button24.Text = "Получить по id";
-            button24.UseVisualStyleBackColor = false;
-            // 
-            // textBox20
-            // 
-            textBox20.Location = new Point(6, 355);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(392, 27);
-            textBox20.TabIndex = 2;
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label37.Location = new Point(6, 329);
-            label37.Name = "label37";
-            label37.Size = new Size(392, 23);
-            label37.TabIndex = 1;
-            label37.Text = "Для получения конкретного объекта, введите id";
-            // 
-            // textBox21
-            // 
-            textBox21.BackColor = Color.FromArgb(69, 69, 69);
-            textBox21.ForeColor = Color.White;
-            textBox21.Location = new Point(6, 26);
-            textBox21.Multiline = true;
-            textBox21.Name = "textBox21";
-            textBox21.ScrollBars = ScrollBars.Vertical;
-            textBox21.Size = new Size(398, 300);
-            textBox21.TabIndex = 0;
-            // 
-            // groupBox17
-            // 
-            groupBox17.Controls.Add(label38);
-            groupBox17.Controls.Add(button25);
-            groupBox17.Controls.Add(button26);
-            groupBox17.Controls.Add(textBox22);
-            groupBox17.Controls.Add(label39);
-            groupBox17.Controls.Add(textBox23);
-            groupBox17.ForeColor = Color.White;
-            groupBox17.Location = new Point(6, 6);
-            groupBox17.Name = "groupBox17";
-            groupBox17.Size = new Size(410, 504);
-            groupBox17.TabIndex = 5;
-            groupBox17.TabStop = false;
-            groupBox17.Text = "Получение данных";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Location = new Point(6, 466);
-            label38.Name = "label38";
-            label38.Size = new Size(67, 20);
-            label38.TabIndex = 20;
-            label38.Text = "Вывод ...";
-            // 
-            // button25
-            // 
-            button25.BackColor = Color.FromArgb(69, 69, 69);
-            button25.FlatStyle = FlatStyle.Flat;
-            button25.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button25.Location = new Point(215, 396);
-            button25.Name = "button25";
-            button25.Size = new Size(189, 56);
-            button25.TabIndex = 4;
-            button25.Text = "Получить все";
-            button25.UseVisualStyleBackColor = false;
-            // 
-            // button26
-            // 
-            button26.BackColor = Color.FromArgb(69, 69, 69);
-            button26.FlatStyle = FlatStyle.Flat;
-            button26.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button26.Location = new Point(6, 396);
-            button26.Name = "button26";
-            button26.Size = new Size(189, 56);
-            button26.TabIndex = 3;
-            button26.Text = "Получить по id";
-            button26.UseVisualStyleBackColor = false;
-            // 
-            // textBox22
-            // 
-            textBox22.Location = new Point(6, 355);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(392, 27);
-            textBox22.TabIndex = 2;
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label39.Location = new Point(6, 329);
-            label39.Name = "label39";
-            label39.Size = new Size(392, 23);
-            label39.TabIndex = 1;
-            label39.Text = "Для получения конкретного объекта, введите id";
-            // 
-            // textBox23
-            // 
-            textBox23.BackColor = Color.FromArgb(69, 69, 69);
-            textBox23.ForeColor = Color.White;
-            textBox23.Location = new Point(6, 26);
-            textBox23.Multiline = true;
-            textBox23.Name = "textBox23";
-            textBox23.ScrollBars = ScrollBars.Vertical;
-            textBox23.Size = new Size(398, 300);
-            textBox23.TabIndex = 0;
-            // 
-            // groupBox18
-            // 
-            groupBox18.Controls.Add(label40);
-            groupBox18.Controls.Add(button27);
-            groupBox18.Controls.Add(button28);
-            groupBox18.Controls.Add(textBox24);
-            groupBox18.Controls.Add(label41);
-            groupBox18.Controls.Add(textBox25);
-            groupBox18.ForeColor = Color.White;
-            groupBox18.Location = new Point(6, 6);
-            groupBox18.Name = "groupBox18";
-            groupBox18.Size = new Size(410, 504);
-            groupBox18.TabIndex = 5;
-            groupBox18.TabStop = false;
-            groupBox18.Text = "Получение данных";
-            // 
-            // label40
-            // 
-            label40.AutoSize = true;
-            label40.Location = new Point(6, 466);
-            label40.Name = "label40";
-            label40.Size = new Size(67, 20);
-            label40.TabIndex = 20;
-            label40.Text = "Вывод ...";
-            // 
-            // button27
-            // 
-            button27.BackColor = Color.FromArgb(69, 69, 69);
-            button27.FlatStyle = FlatStyle.Flat;
-            button27.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button27.Location = new Point(215, 396);
-            button27.Name = "button27";
-            button27.Size = new Size(189, 56);
-            button27.TabIndex = 4;
-            button27.Text = "Получить все";
-            button27.UseVisualStyleBackColor = false;
-            // 
-            // button28
-            // 
-            button28.BackColor = Color.FromArgb(69, 69, 69);
-            button28.FlatStyle = FlatStyle.Flat;
-            button28.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button28.Location = new Point(6, 396);
-            button28.Name = "button28";
-            button28.Size = new Size(189, 56);
-            button28.TabIndex = 3;
-            button28.Text = "Получить по id";
-            button28.UseVisualStyleBackColor = false;
-            // 
-            // textBox24
-            // 
-            textBox24.Location = new Point(6, 355);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(392, 27);
-            textBox24.TabIndex = 2;
-            // 
-            // label41
-            // 
-            label41.AutoSize = true;
-            label41.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label41.Location = new Point(6, 329);
-            label41.Name = "label41";
-            label41.Size = new Size(392, 23);
-            label41.TabIndex = 1;
-            label41.Text = "Для получения конкретного объекта, введите id";
-            // 
-            // textBox25
-            // 
-            textBox25.BackColor = Color.FromArgb(69, 69, 69);
-            textBox25.ForeColor = Color.White;
-            textBox25.Location = new Point(6, 26);
-            textBox25.Multiline = true;
-            textBox25.Name = "textBox25";
-            textBox25.ScrollBars = ScrollBars.Vertical;
-            textBox25.Size = new Size(398, 300);
-            textBox25.TabIndex = 0;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1683,11 +1858,37 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             tabPage2.ResumeLayout(false);
+            groupBox8.ResumeLayout(false);
+            groupBox8.PerformLayout();
+            groupBox7.ResumeLayout(false);
+            groupBox7.PerformLayout();
             tabPage3.ResumeLayout(false);
+            groupBox14.ResumeLayout(false);
+            groupBox14.PerformLayout();
+            groupBox9.ResumeLayout(false);
+            groupBox9.PerformLayout();
             tabPage4.ResumeLayout(false);
+            groupBox15.ResumeLayout(false);
+            groupBox15.PerformLayout();
+            groupBox10.ResumeLayout(false);
+            groupBox10.PerformLayout();
             tabPage5.ResumeLayout(false);
+            groupBox16.ResumeLayout(false);
+            groupBox16.PerformLayout();
+            groupBox11.ResumeLayout(false);
+            groupBox11.PerformLayout();
             tabPage6.ResumeLayout(false);
+            groupBox19.ResumeLayout(false);
+            groupBox19.PerformLayout();
+            groupBox17.ResumeLayout(false);
+            groupBox17.PerformLayout();
+            groupBox12.ResumeLayout(false);
+            groupBox12.PerformLayout();
             tabPage7.ResumeLayout(false);
+            groupBox18.ResumeLayout(false);
+            groupBox18.PerformLayout();
+            groupBox13.ResumeLayout(false);
+            groupBox13.PerformLayout();
             tabPage8.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
@@ -1695,30 +1896,6 @@
             groupBox5.PerformLayout();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
-            groupBox8.ResumeLayout(false);
-            groupBox8.PerformLayout();
-            groupBox9.ResumeLayout(false);
-            groupBox9.PerformLayout();
-            groupBox10.ResumeLayout(false);
-            groupBox10.PerformLayout();
-            groupBox11.ResumeLayout(false);
-            groupBox11.PerformLayout();
-            groupBox12.ResumeLayout(false);
-            groupBox12.PerformLayout();
-            groupBox13.ResumeLayout(false);
-            groupBox13.PerformLayout();
-            groupBox14.ResumeLayout(false);
-            groupBox14.PerformLayout();
-            groupBox15.ResumeLayout(false);
-            groupBox15.PerformLayout();
-            groupBox16.ResumeLayout(false);
-            groupBox16.PerformLayout();
-            groupBox17.ResumeLayout(false);
-            groupBox17.PerformLayout();
-            groupBox18.ResumeLayout(false);
-            groupBox18.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1766,7 +1943,7 @@
         private TextBox idForDeleteWorker;
         private Label label20;
         private GroupBox groupBox5;
-        private CheckBox checkBox2;
+        private CheckBox autoIdWorkers;
         private Label label13;
         private TextBox numberPhoneWorkersBox;
         private Label label14;
@@ -1831,9 +2008,9 @@
         private TextBox textBox13;
         private Label label27;
         private GroupBox groupBox12;
-        private Label label28;
+        private Label outputDeleteSupplier;
         private Button button17;
-        private TextBox textBox14;
+        private TextBox idForDeleteSupplier;
         private Label label29;
         private GroupBox groupBox13;
         private Label label30;
@@ -1848,7 +2025,7 @@
         private Label label37;
         private TextBox textBox21;
         private GroupBox groupBox17;
-        private Label label38;
+        private Label outputGetSupplier;
         private Button button25;
         private Button button26;
         private TextBox textBox22;
@@ -1861,5 +2038,20 @@
         private TextBox textBox24;
         private Label label41;
         private TextBox textBox25;
+        private GroupBox groupBox19;
+        private TextBox rattingSupplierBox;
+        private CheckBox autoIdSupplier;
+        private Label label43;
+        private TextBox numberPhoneSupplierBox;
+        private Label label44;
+        private TextBox emailSupplierBox;
+        private Label label45;
+        private TextBox nameSupplierBox;
+        private Label label46;
+        private TextBox idSupplierBox;
+        private Label label47;
+        private Button button29;
+        private Button AddSupplier;
+        private Label outputAddSupplier;
     }
 }

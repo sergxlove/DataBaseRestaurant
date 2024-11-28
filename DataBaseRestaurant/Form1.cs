@@ -56,15 +56,25 @@ namespace DataBaseRestaurant
         {
             try
             {
-                var worker = Workers.Create(Convert.ToInt32(idWorkerBox.Text), nameWorkerBox.Text,
+                int id;
+                var workersService = _serviceProvider.GetService<IWorkersService>();
+                if (autoIdWorkers.Checked == true)
+                {
+                    var listId = await workersService!.GetAllIdWorkersAsync();
+                    id = listId.Max() + 1;
+                }
+                else
+                {
+                    id = Convert.ToInt32(idWorkerBox.Text);
+                }
+                var worker = Workers.Create(id, nameWorkerBox.Text,
                     emailWorkerBox.Text, numberPhoneWorkersBox.Text, positionWorkerBox.Text,
                     Convert.ToInt32(salaryWorkersBox.Text));
                 if (!string.IsNullOrEmpty(worker.error))
                 {
                     throw new Exception(worker.error);
                 }
-                var workersService = _serviceProvider.GetService<IWorkersService>();
-                var checkIdWorker = await workersService!.GetWorkerByIdAsync(Convert.ToInt32(idWorkerBox.Text));
+                var checkIdWorker = await workersService!.GetWorkerByIdAsync(id);
                 if (checkIdWorker is not null)
                 {
                     throw new Exception("an worker with this id already exists");
@@ -124,7 +134,7 @@ namespace DataBaseRestaurant
                     outputGetWorkers.Text = "done";
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 if (ex.Message.Length >= 45)
                 {
@@ -178,7 +188,7 @@ namespace DataBaseRestaurant
             {
                 var workerService = _serviceProvider.GetService<IWorkersService>();
                 int result = await workerService!.DeleteWorkerAsync(Convert.ToInt32(idForDeleteWorker.Text));
-                if(result == 0)
+                if (result == 0)
                 {
                     outputDeleteWorker.Text = "not found element";
                 }
@@ -187,7 +197,7 @@ namespace DataBaseRestaurant
                     outputDeleteWorker.Text = "done";
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 if (ex.Message.Length >= 45)
                 {
@@ -198,6 +208,139 @@ namespace DataBaseRestaurant
                     outputDeleteWorker.Text = ex.Message;
                 }
             }
+        }
+
+        private async void button30_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id;
+                var supplierService = _serviceProvider.GetService<ISuppliersService>();
+                if (autoIdSupplier.Checked == true)
+                {
+                    var listId = await supplierService!.GetAllIdSuppliersAsync();
+                    id = listId.Max() + 1;
+                }
+                else
+                {
+                    id = Convert.ToInt32(idSupplierBox.Text);
+                }
+                var supplier = Suppliers.Create(id, nameSupplierBox.Text, emailSupplierBox.Text,
+                    numberPhoneSupplierBox.Text, Convert.ToInt32(rattingSupplierBox.Text));
+                if (!string.IsNullOrEmpty(supplier.error))
+                {
+                    throw new Exception(supplier.error);
+                }
+                var checkIdSuppler = await supplierService!.GetSupplierByIdAsync(id);
+                if (checkIdSuppler is not null)
+                {
+                    throw new Exception("an supplier with this id already exists");
+                }
+                await supplierService.AddNewSupplierAsync(supplier.supplier!);
+                outputAddSupplier.Text = "done";
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Length >= 45)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    outputAddSupplier.Text = ex.Message;
+                }
+            }
+        }
+
+        private void autoIdWorkers_CheckedChanged(object sender, EventArgs e)
+        {
+            if (autoIdWorkers.Checked == true)
+            {
+                idWorkerBox.Text = "Auto";
+            }
+            else
+            {
+                idWorkerBox.Text = string.Empty;
+            }
+        }
+
+        private void autoIdSupplier_CheckedChanged(object sender, EventArgs e)
+        {
+            if (autoIdSupplier.Checked == true)
+            {
+                idSupplierBox.Text = "Auto";
+            }
+            else
+            {
+                idSupplierBox.Text = string.Empty;
+            }
+        }
+
+        private async void button29_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var supplier = Suppliers.Create(Convert.ToInt32(idSupplierBox.Text), nameSupplierBox.Text, emailSupplierBox.Text,
+                    numberPhoneSupplierBox.Text, Convert.ToInt32(rattingSupplierBox.Text));
+                if (!string.IsNullOrEmpty(supplier.error))
+                {
+                    throw new Exception(supplier.error);
+                }
+                var supplierService = _serviceProvider.GetService<ISuppliersService>();
+                int result = await supplierService!.UpdateSupplierAsync(supplier.supplier!);
+                if (result == 0)
+                {
+                    outputAddSupplier.Text = "not found element";
+                }
+                else
+                {
+                    outputAddSupplier.Text = "done";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Length >= 45)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    outputAddSupplier.Text = ex.Message;
+                }
+            }
+        }
+
+        private async void button17_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var supplierService = _serviceProvider.GetService<ISuppliersService>();
+                int result = await supplierService!.DeleteSupplierAsync(Convert.ToInt32(idForDeleteSupplier.Text));
+                if (result == 0)
+                {
+                    outputDeleteSupplier.Text = "not found element";
+                }
+                else
+                {
+                    outputDeleteSupplier.Text = "done";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Length >= 45)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    outputDeleteSupplier.Text = ex.Message;
+                }
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
