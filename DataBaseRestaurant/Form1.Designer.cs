@@ -129,9 +129,9 @@
             outputGetSupplier = new Label();
             button25 = new Button();
             button26 = new Button();
-            textBox22 = new TextBox();
+            idForGetSupplier = new TextBox();
             label39 = new Label();
-            textBox23 = new TextBox();
+            dataSuppliersTB = new TextBox();
             groupBox12 = new GroupBox();
             outputDeleteSupplier = new Label();
             button17 = new Button();
@@ -1256,9 +1256,9 @@
             groupBox17.Controls.Add(outputGetSupplier);
             groupBox17.Controls.Add(button25);
             groupBox17.Controls.Add(button26);
-            groupBox17.Controls.Add(textBox22);
+            groupBox17.Controls.Add(idForGetSupplier);
             groupBox17.Controls.Add(label39);
-            groupBox17.Controls.Add(textBox23);
+            groupBox17.Controls.Add(dataSuppliersTB);
             groupBox17.ForeColor = Color.White;
             groupBox17.Location = new Point(6, 6);
             groupBox17.Name = "groupBox17";
@@ -1300,13 +1300,14 @@
             button26.TabIndex = 3;
             button26.Text = "Получить по id";
             button26.UseVisualStyleBackColor = false;
+            button26.Click += button26_Click;
             // 
-            // textBox22
+            // idForGetSupplier
             // 
-            textBox22.Location = new Point(6, 355);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(392, 27);
-            textBox22.TabIndex = 2;
+            idForGetSupplier.Location = new Point(6, 355);
+            idForGetSupplier.Name = "idForGetSupplier";
+            idForGetSupplier.Size = new Size(392, 27);
+            idForGetSupplier.TabIndex = 2;
             // 
             // label39
             // 
@@ -1318,16 +1319,16 @@
             label39.TabIndex = 1;
             label39.Text = "Для получения конкретного объекта, введите id";
             // 
-            // textBox23
+            // dataSuppliersTB
             // 
-            textBox23.BackColor = Color.FromArgb(69, 69, 69);
-            textBox23.ForeColor = Color.White;
-            textBox23.Location = new Point(6, 26);
-            textBox23.Multiline = true;
-            textBox23.Name = "textBox23";
-            textBox23.ScrollBars = ScrollBars.Vertical;
-            textBox23.Size = new Size(398, 300);
-            textBox23.TabIndex = 0;
+            dataSuppliersTB.BackColor = Color.FromArgb(69, 69, 69);
+            dataSuppliersTB.ForeColor = Color.White;
+            dataSuppliersTB.Location = new Point(6, 26);
+            dataSuppliersTB.Multiline = true;
+            dataSuppliersTB.Name = "dataSuppliersTB";
+            dataSuppliersTB.ScrollBars = ScrollBars.Vertical;
+            dataSuppliersTB.Size = new Size(398, 300);
+            dataSuppliersTB.TabIndex = 0;
             // 
             // groupBox12
             // 
@@ -2028,9 +2029,9 @@
         private Label outputGetSupplier;
         private Button button25;
         private Button button26;
-        private TextBox textBox22;
+        private TextBox idForGetSupplier;
         private Label label39;
-        private TextBox textBox23;
+        private TextBox dataSuppliersTB;
         private GroupBox groupBox18;
         private Label label40;
         private Button button27;
