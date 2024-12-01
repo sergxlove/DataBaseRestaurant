@@ -56,7 +56,7 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
                 Ratting = supplier.Ratting
             };
 
-            await _dbContext.AddAsync(supplier);
+            await _dbContext.AddAsync(suppliersEntity);
             await _dbContext.SaveChangesAsync();
             return suppliersEntity.Id;
         }

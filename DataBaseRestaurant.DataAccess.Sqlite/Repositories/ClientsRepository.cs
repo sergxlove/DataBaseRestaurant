@@ -56,7 +56,6 @@ namespace DataBaseRestaurant.DataAccess.Sqlite.Repositories
             };
 
             await _dbContext.AddAsync(clientsEntity);
-            await _dbContext.Clients.AddAsync(clientsEntity);
             await _dbContext.SaveChangesAsync();
 
             return clientsEntity.Id;

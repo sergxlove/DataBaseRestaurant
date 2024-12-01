@@ -55,7 +55,7 @@
             }
             if(string.IsNullOrEmpty(numberphone))
             {
-                error = "email is null";
+                error = "number phone is null";
                 return (worker, error);
             }
             if (numberphone[0] != NUMBER_PHONE_FORMAT[0] || numberphone[2] != NUMBER_PHONE_FORMAT[2] || numberphone[6] != NUMBER_PHONE_FORMAT[6]

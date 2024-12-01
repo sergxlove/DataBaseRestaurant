@@ -207,7 +207,7 @@ namespace DataBaseRestaurant
             {
                 var supplierService = _serviceProvider.GetService<ISuppliersService>();
                 var supplier = await supplierService!.GetSupplierByIdAsync(Convert.ToInt32(idForGetSupplier.Text));
-                if(supplier is not null)
+                if (supplier is not null)
                 {
                     dataSuppliersTB.Text = $"ID: {supplier.Id} \r\nName: {supplier.Name} \r\nEmail: {supplier.Email} " +
                     $"\r\nNumberPhone: {supplier.NumberPhone} \r\nRatting: {supplier.Ratting} \r\n";
@@ -218,7 +218,7 @@ namespace DataBaseRestaurant
                     outputGetSupplier.Text = "";
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 if (ex.Message.Length >= 45)
                 {
@@ -380,6 +380,176 @@ namespace DataBaseRestaurant
                 else
                 {
                     outputDeleteWorker.Text = ex.Message;
+                }
+            }
+        }
+
+        private async void comboBox2_Click(object sender, EventArgs e)
+        {
+            idSupplierComboBox.Items.Clear();
+            var suppliersService = _serviceProvider.GetService<ISuppliersService>();
+            var suppliersId = await suppliersService!.GetAllIdSuppliersAsync();
+            if (suppliersId.Count == 0)
+            {
+                idSupplierComboBox.Items.Add("not elements");
+            }
+            foreach (var id in suppliersId)
+            {
+                idSupplierComboBox.Items.Add(id);
+            }
+        }
+
+        private async void button19_Click(object sender, EventArgs e)
+        {
+            var ingredientsService = _serviceProvider.GetService<IIngredientsService>();
+            var ingredients = await ingredientsService!.GetAllIngredientsAsync();
+            StringBuilder ingredientsString = new();
+            foreach (var ingredient in ingredients)
+            {
+                ingredientsString.Append($"ID: {ingredient.Id} \r\nName: {ingredient.Name} \r\n" +
+                    $"Weight: {ingredient.Weight} \r\nCount in warehouse: {ingredient.QuantityInWareHouse} \r\n" +
+                    $"ID supplier: {ingredient.SupplierId} \r\n");
+                ingredientsString.Append("\r\n");
+            }
+            dataIngredientsTB.Text = ingredientsString.ToString();
+            outputGetIngredients.Text = "done";
+        }
+
+        private async void button20_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(idForGetIngredients.Text);
+                var ingredientsService = _serviceProvider.GetService<IIngredientsService>();
+                var ingredient = await ingredientsService!.GetIngredientsByIdAsync(id);
+                if (ingredient is not null)
+                {
+                    outputGetIngredients.Text = "done";
+                    dataIngredientsTB.Text = $"ID: {ingredient.Id} \r\nName: {ingredient.Name} \r\n" +
+                    $"Weight: {ingredient.Weight} \r\nCount in warehouse: {ingredient.QuantityInWareHouse} \r\n" +
+                    $"ID supplier: {ingredient.SupplierId} \r\n";
+                }
+                else
+                {
+                    outputGetIngredients.Text = "not found element";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Length >= 45)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    outputGetIngredients.Text = ex.Message;
+                }
+            }
+        }
+
+        private async void button31_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id;
+                var ingredientsService = _serviceProvider.GetService<IIngredientsService>();
+                if (autoIdIngredients.Checked == true)
+                {
+                    var listId = await ingredientsService!.GetAllIdIngredientsAsync();
+                    id = listId.Max() + 1;
+                }
+                else
+                {
+                    id = Convert.ToInt32(idIngredientsBox.Text);
+                }
+                var ingredient = Ingredients.Create(id, nameIngredientsBox.Text,
+                    Convert.ToInt32(weightIngredientBox.Text), Convert.ToInt32(countInWareIngredientsBox.Text),
+                    Convert.ToInt32(idSupplierComboBox.Text));
+                if (!string.IsNullOrEmpty(ingredient.error))
+                {
+                    throw new Exception(ingredient.error);
+                }
+                var checkIdSupplier = await ingredientsService!.GetIngredientsByIdAsync(id);
+                if (checkIdSupplier is not null)
+                {
+                    throw new Exception("an ingredients with this id already exists");
+                }
+                await ingredientsService.AddNewIngredientsAsync(ingredient.ingredients!);
+                outputAddIngredients.Text = "done";
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Length >= 45)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    outputAddIngredients.Text = ex.Message;
+                }
+            }
+        }
+
+        private async void button30_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                var ingredient = Ingredients.Create(Convert.ToInt32(idIngredientsBox.Text), nameIngredientsBox.Text,
+                    Convert.ToInt32(weightIngredientBox.Text), Convert.ToInt32(countInWareIngredientsBox.Text),
+                    Convert.ToInt32(idSupplierComboBox.Text));
+                if (!string.IsNullOrEmpty(ingredient.error))
+                {
+                    throw new Exception(ingredient.error);
+                }
+                var ingredientsService = _serviceProvider.GetService<IIngredientsService>();
+                int result = await ingredientsService!.UpdateIngredientsAsync(ingredient.ingredients!);
+                if (result == 0)
+                {
+                    outputAddIngredients.Text = "not found element";
+                }
+                else
+                {
+                    outputAddIngredients.Text = "done";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Length >= 45)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    outputAddIngredients.Text = ex.Message;
+                }
+            }
+        }
+
+        private async void button14_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(idForDeleteIngredients.Text);
+                var ingredientsService = _serviceProvider.GetService<IIngredientsService>();
+                int result = await ingredientsService!.DeleteIngredientsAsync(id);
+                if (result == 0)
+                {
+                    outputDeleteIngredients.Text = "not found element";
+                }
+                else
+                {
+                    outputDeleteIngredients.Text = "done";
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Length >= 45)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    outputDeleteIngredients.Text = ex.Message;
                 }
             }
         }
