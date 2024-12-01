@@ -42,7 +42,7 @@
                 error = "email is null or the allowed number of characters is exceeded";
                 return (supplier, error);
             }
-            if(!email.Contains(".mail") && !email.Contains(".gmail"))
+            if(!email.Contains("@mail") && !email.Contains("@gmail"))
             {
                 error = "invalid email";
                 return (supplier, error);

@@ -71,17 +71,32 @@
             label11 = new Label();
             textBox9 = new TextBox();
             tabPage3 = new TabPage();
+            groupBox20 = new GroupBox();
+            idSupplierComboBox = new ComboBox();
+            autoIdIngredients = new CheckBox();
+            label38 = new Label();
+            countInWareIngredientsBox = new TextBox();
+            label42 = new Label();
+            weightIngredientBox = new TextBox();
+            label48 = new Label();
+            nameIngredientsBox = new TextBox();
+            label49 = new Label();
+            idIngredientsBox = new TextBox();
+            label50 = new Label();
+            button30 = new Button();
+            button31 = new Button();
+            outputAddIngredients = new Label();
             groupBox14 = new GroupBox();
-            label32 = new Label();
+            outputGetIngredients = new Label();
             button19 = new Button();
             button20 = new Button();
-            textBox16 = new TextBox();
+            idForGetIngredients = new TextBox();
             label33 = new Label();
-            textBox17 = new TextBox();
+            dataIngredientsTB = new TextBox();
             groupBox9 = new GroupBox();
-            label22 = new Label();
+            outputDeleteIngredients = new Label();
             button14 = new Button();
-            textBox11 = new TextBox();
+            idForDeleteIngredients = new TextBox();
             label23 = new Label();
             tabPage4 = new TabPage();
             groupBox15 = new GroupBox();
@@ -189,6 +204,7 @@
             groupBox8.SuspendLayout();
             groupBox7.SuspendLayout();
             tabPage3.SuspendLayout();
+            groupBox20.SuspendLayout();
             groupBox14.SuspendLayout();
             groupBox9.SuspendLayout();
             tabPage4.SuspendLayout();
@@ -667,6 +683,7 @@
             // tabPage3
             // 
             tabPage3.BackColor = Color.FromArgb(69, 69, 69);
+            tabPage3.Controls.Add(groupBox20);
             tabPage3.Controls.Add(groupBox14);
             tabPage3.Controls.Add(groupBox9);
             tabPage3.Location = new Point(4, 29);
@@ -675,14 +692,170 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Ingredients";
             // 
+            // groupBox20
+            // 
+            groupBox20.Controls.Add(idSupplierComboBox);
+            groupBox20.Controls.Add(autoIdIngredients);
+            groupBox20.Controls.Add(label38);
+            groupBox20.Controls.Add(countInWareIngredientsBox);
+            groupBox20.Controls.Add(label42);
+            groupBox20.Controls.Add(weightIngredientBox);
+            groupBox20.Controls.Add(label48);
+            groupBox20.Controls.Add(nameIngredientsBox);
+            groupBox20.Controls.Add(label49);
+            groupBox20.Controls.Add(idIngredientsBox);
+            groupBox20.Controls.Add(label50);
+            groupBox20.Controls.Add(button30);
+            groupBox20.Controls.Add(button31);
+            groupBox20.Controls.Add(outputAddIngredients);
+            groupBox20.ForeColor = Color.White;
+            groupBox20.Location = new Point(433, 6);
+            groupBox20.Name = "groupBox20";
+            groupBox20.Size = new Size(410, 504);
+            groupBox20.TabIndex = 6;
+            groupBox20.TabStop = false;
+            groupBox20.Text = "Добавление/обновление данных";
+            // 
+            // idSupplierComboBox
+            // 
+            idSupplierComboBox.FormattingEnabled = true;
+            idSupplierComboBox.Location = new Point(168, 164);
+            idSupplierComboBox.Name = "idSupplierComboBox";
+            idSupplierComboBox.Size = new Size(236, 28);
+            idSupplierComboBox.TabIndex = 20;
+            idSupplierComboBox.Click += comboBox2_Click;
+            // 
+            // autoIdIngredients
+            // 
+            autoIdIngredients.AutoSize = true;
+            autoIdIngredients.Location = new Point(15, 353);
+            autoIdIngredients.Name = "autoIdIngredients";
+            autoIdIngredients.Size = new Size(256, 24);
+            autoIdIngredients.TabIndex = 19;
+            autoIdIngredients.Text = "Генерировать ID автоматически";
+            autoIdIngredients.UseVisualStyleBackColor = true;
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label38.Location = new Point(15, 167);
+            label38.Name = "label38";
+            label38.Size = new Size(133, 25);
+            label38.TabIndex = 17;
+            label38.Text = "ID поставщика";
+            // 
+            // countInWareIngredientsBox
+            // 
+            countInWareIngredientsBox.Location = new Point(215, 131);
+            countInWareIngredientsBox.Name = "countInWareIngredientsBox";
+            countInWareIngredientsBox.Size = new Size(189, 27);
+            countInWareIngredientsBox.TabIndex = 15;
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label42.Location = new Point(15, 130);
+            label42.Name = "label42";
+            label42.Size = new Size(190, 25);
+            label42.TabIndex = 16;
+            label42.Text = "Количестов на складе";
+            // 
+            // weightIngredientBox
+            // 
+            weightIngredientBox.Location = new Point(168, 98);
+            weightIngredientBox.Name = "weightIngredientBox";
+            weightIngredientBox.Size = new Size(236, 27);
+            weightIngredientBox.TabIndex = 13;
+            // 
+            // label48
+            // 
+            label48.AutoSize = true;
+            label48.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label48.Location = new Point(15, 97);
+            label48.Name = "label48";
+            label48.Size = new Size(39, 25);
+            label48.TabIndex = 14;
+            label48.Text = "Вес\r\n";
+            // 
+            // nameIngredientsBox
+            // 
+            nameIngredientsBox.Location = new Point(168, 65);
+            nameIngredientsBox.Name = "nameIngredientsBox";
+            nameIngredientsBox.Size = new Size(236, 27);
+            nameIngredientsBox.TabIndex = 11;
+            // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label49.Location = new Point(15, 64);
+            label49.Name = "label49";
+            label49.Size = new Size(90, 25);
+            label49.TabIndex = 12;
+            label49.Text = "Название\r\n";
+            // 
+            // idIngredientsBox
+            // 
+            idIngredientsBox.Location = new Point(168, 31);
+            idIngredientsBox.Name = "idIngredientsBox";
+            idIngredientsBox.Size = new Size(236, 27);
+            idIngredientsBox.TabIndex = 8;
+            // 
+            // label50
+            // 
+            label50.AutoSize = true;
+            label50.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label50.Location = new Point(15, 30);
+            label50.Name = "label50";
+            label50.Size = new Size(30, 25);
+            label50.TabIndex = 10;
+            label50.Text = "ID";
+            // 
+            // button30
+            // 
+            button30.BackColor = Color.FromArgb(69, 69, 69);
+            button30.FlatStyle = FlatStyle.Flat;
+            button30.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button30.Location = new Point(215, 396);
+            button30.Name = "button30";
+            button30.Size = new Size(189, 56);
+            button30.TabIndex = 9;
+            button30.Text = "Обновить";
+            button30.UseVisualStyleBackColor = false;
+            button30.Click += button30_Click_1;
+            // 
+            // button31
+            // 
+            button31.BackColor = Color.FromArgb(69, 69, 69);
+            button31.FlatStyle = FlatStyle.Flat;
+            button31.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button31.Location = new Point(6, 396);
+            button31.Name = "button31";
+            button31.Size = new Size(189, 56);
+            button31.TabIndex = 5;
+            button31.Text = "Добавить";
+            button31.UseVisualStyleBackColor = false;
+            button31.Click += button31_Click;
+            // 
+            // outputAddIngredients
+            // 
+            outputAddIngredients.AutoSize = true;
+            outputAddIngredients.Location = new Point(15, 466);
+            outputAddIngredients.Name = "outputAddIngredients";
+            outputAddIngredients.Size = new Size(67, 20);
+            outputAddIngredients.TabIndex = 8;
+            outputAddIngredients.Text = "Вывод ...";
+            // 
             // groupBox14
             // 
-            groupBox14.Controls.Add(label32);
+            groupBox14.Controls.Add(outputGetIngredients);
             groupBox14.Controls.Add(button19);
             groupBox14.Controls.Add(button20);
-            groupBox14.Controls.Add(textBox16);
+            groupBox14.Controls.Add(idForGetIngredients);
             groupBox14.Controls.Add(label33);
-            groupBox14.Controls.Add(textBox17);
+            groupBox14.Controls.Add(dataIngredientsTB);
             groupBox14.ForeColor = Color.White;
             groupBox14.Location = new Point(6, 6);
             groupBox14.Name = "groupBox14";
@@ -691,14 +864,14 @@
             groupBox14.TabStop = false;
             groupBox14.Text = "Получение данных";
             // 
-            // label32
+            // outputGetIngredients
             // 
-            label32.AutoSize = true;
-            label32.Location = new Point(6, 466);
-            label32.Name = "label32";
-            label32.Size = new Size(67, 20);
-            label32.TabIndex = 20;
-            label32.Text = "Вывод ...";
+            outputGetIngredients.AutoSize = true;
+            outputGetIngredients.Location = new Point(6, 466);
+            outputGetIngredients.Name = "outputGetIngredients";
+            outputGetIngredients.Size = new Size(67, 20);
+            outputGetIngredients.TabIndex = 20;
+            outputGetIngredients.Text = "Вывод ...";
             // 
             // button19
             // 
@@ -711,6 +884,7 @@
             button19.TabIndex = 4;
             button19.Text = "Получить все";
             button19.UseVisualStyleBackColor = false;
+            button19.Click += button19_Click;
             // 
             // button20
             // 
@@ -723,13 +897,14 @@
             button20.TabIndex = 3;
             button20.Text = "Получить по id";
             button20.UseVisualStyleBackColor = false;
+            button20.Click += button20_Click;
             // 
-            // textBox16
+            // idForGetIngredients
             // 
-            textBox16.Location = new Point(6, 355);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(392, 27);
-            textBox16.TabIndex = 2;
+            idForGetIngredients.Location = new Point(6, 355);
+            idForGetIngredients.Name = "idForGetIngredients";
+            idForGetIngredients.Size = new Size(392, 27);
+            idForGetIngredients.TabIndex = 2;
             // 
             // label33
             // 
@@ -741,22 +916,22 @@
             label33.TabIndex = 1;
             label33.Text = "Для получения конкретного объекта, введите id";
             // 
-            // textBox17
+            // dataIngredientsTB
             // 
-            textBox17.BackColor = Color.FromArgb(69, 69, 69);
-            textBox17.ForeColor = Color.White;
-            textBox17.Location = new Point(6, 26);
-            textBox17.Multiline = true;
-            textBox17.Name = "textBox17";
-            textBox17.ScrollBars = ScrollBars.Vertical;
-            textBox17.Size = new Size(398, 300);
-            textBox17.TabIndex = 0;
+            dataIngredientsTB.BackColor = Color.FromArgb(69, 69, 69);
+            dataIngredientsTB.ForeColor = Color.White;
+            dataIngredientsTB.Location = new Point(6, 26);
+            dataIngredientsTB.Multiline = true;
+            dataIngredientsTB.Name = "dataIngredientsTB";
+            dataIngredientsTB.ScrollBars = ScrollBars.Vertical;
+            dataIngredientsTB.Size = new Size(398, 300);
+            dataIngredientsTB.TabIndex = 0;
             // 
             // groupBox9
             // 
-            groupBox9.Controls.Add(label22);
+            groupBox9.Controls.Add(outputDeleteIngredients);
             groupBox9.Controls.Add(button14);
-            groupBox9.Controls.Add(textBox11);
+            groupBox9.Controls.Add(idForDeleteIngredients);
             groupBox9.Controls.Add(label23);
             groupBox9.ForeColor = Color.White;
             groupBox9.Location = new Point(860, 6);
@@ -766,14 +941,14 @@
             groupBox9.TabStop = false;
             groupBox9.Text = "Удаление данных";
             // 
-            // label22
+            // outputDeleteIngredients
             // 
-            label22.AutoSize = true;
-            label22.Location = new Point(12, 466);
-            label22.Name = "label22";
-            label22.Size = new Size(67, 20);
-            label22.TabIndex = 7;
-            label22.Text = "Вывод ...";
+            outputDeleteIngredients.AutoSize = true;
+            outputDeleteIngredients.Location = new Point(12, 466);
+            outputDeleteIngredients.Name = "outputDeleteIngredients";
+            outputDeleteIngredients.Size = new Size(67, 20);
+            outputDeleteIngredients.TabIndex = 7;
+            outputDeleteIngredients.Text = "Вывод ...";
             // 
             // button14
             // 
@@ -786,13 +961,14 @@
             button14.TabIndex = 5;
             button14.Text = "Удалить ";
             button14.UseVisualStyleBackColor = false;
+            button14.Click += button14_Click;
             // 
-            // textBox11
+            // idForDeleteIngredients
             // 
-            textBox11.Location = new Point(12, 65);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(392, 27);
-            textBox11.TabIndex = 6;
+            idForDeleteIngredients.Location = new Point(12, 65);
+            idForDeleteIngredients.Name = "idForDeleteIngredients";
+            idForDeleteIngredients.Size = new Size(392, 27);
+            idForDeleteIngredients.TabIndex = 6;
             // 
             // label23
             // 
@@ -1864,6 +2040,8 @@
             groupBox7.ResumeLayout(false);
             groupBox7.PerformLayout();
             tabPage3.ResumeLayout(false);
+            groupBox20.ResumeLayout(false);
+            groupBox20.PerformLayout();
             groupBox14.ResumeLayout(false);
             groupBox14.PerformLayout();
             groupBox9.ResumeLayout(false);
@@ -1980,16 +2158,16 @@
         private TextBox textBox10;
         private Label label19;
         private GroupBox groupBox14;
-        private Label label32;
+        private Label outputGetIngredients;
         private Button button19;
         private Button button20;
-        private TextBox textBox16;
+        private TextBox idForGetIngredients;
         private Label label33;
-        private TextBox textBox17;
+        private TextBox dataIngredientsTB;
         private GroupBox groupBox9;
-        private Label label22;
+        private Label outputDeleteIngredients;
         private Button button14;
-        private TextBox textBox11;
+        private TextBox idForDeleteIngredients;
         private Label label23;
         private GroupBox groupBox15;
         private Label label34;
@@ -2054,5 +2232,20 @@
         private Button button29;
         private Button AddSupplier;
         private Label outputAddSupplier;
+        private GroupBox groupBox20;
+        private CheckBox autoIdIngredients;
+        private Label label38;
+        private TextBox countInWareIngredientsBox;
+        private Label label42;
+        private TextBox weightIngredientBox;
+        private Label label48;
+        private TextBox nameIngredientsBox;
+        private Label label49;
+        private TextBox idIngredientsBox;
+        private Label label50;
+        private Button button30;
+        private Button button31;
+        private Label outputAddIngredients;
+        private ComboBox idSupplierComboBox;
     }
 }
